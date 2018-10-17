@@ -1,0 +1,7 @@
+Product Backlog
+
+
+1. As a user, I should be able to quit the program
+2.  As a user, I should be able to create directories, each of which may be relative to the current directory
+or may be a full path.
+3. As a user, I should be able to change the current directory to another
