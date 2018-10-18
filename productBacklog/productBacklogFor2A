@@ -1,7 +1,19 @@
 Product Backlog
 
 
-1. As a user, I should be able to quit the program
-2.  As a user, I should be able to create directories, each of which may be relative to the current directory
-or may be a full path.
-3. As a user, I should be able to change the current directory to another
+1. As a user, I should be able to quit the program (1hr)
+2. As a user, I should be able to create directories, each of which may be
+	relative to the current directory or may be a full path.(1hr)
+3. As a user, I should be able to change the current directory to another (1hr)
+4. As a user, I am able to print a specified file, print directory and
+	contents of that directory, or print a suitable message by input path. (2hr)
+5. As a user, I should be able to print out the current working directory
+	(including the whole path). So I know what directory I am currently
+	working on. (2hr)
+6. As a user, I should be able to save the current directory, and move to the
+	next desired directory. So later I can immediately retrieve the old and
+	most recently saved directory. (2hr)
+
+
+
+
