@@ -21,7 +21,7 @@ Product Backlog
 9. a user, I should be able to display the contents of files concatenated in the shell.(1hr)
 10. As a user, I should be able to put the string of characters into a file.
 	If the file does not exist, the program should creates a new file to add the string.(1hr)
-
-
-
-
+11. As a user, I should be able to put the string of characters into a file
+	, but appends instead of overwrites.(1hr)
+12. As a user, I should be able to print documentation for CMD.(1hr)
+13. As a user prompt the user for input.(1hr)
