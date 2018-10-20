@@ -1,0 +1,17 @@
+What did I work on in the last three days?
+    - Came up with tasks to be accomplished 
+    of Sprint1 with my team.
+    - Took team photos with my team.
+    - Allocated tasks among the team.
+    - Brainstormed user stories with team.
+
+What do I plan to work in the next three days?
+    - Brainstorm CRC Cards with my team.
+    - Start working on codes of Jshell
+    	- Start writing the base code for Command class
+    	- Start writing the base code for change directory
+
+Am I blocked on anything?
+    - Taking a good photo is not that easy.
+    - Midterm coming.
+    - Allocated task need to be fair.
