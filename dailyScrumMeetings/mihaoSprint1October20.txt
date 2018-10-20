@@ -1,0 +1,11 @@
+What did I work on in the last three days?
+    - brainstormed design ideas with team for crc cards.
+    - figure out the relationship of each class.
+
+What do I plan to work in the next three days?
+    - complete the crc cards.
+    - work on new tasks for sprint 2
+        - write the basic code for Command Class(ie mkdir, pwd)
+
+Am I blocked on anything?
+    - There are 1 midterm and 1 quiz in next week, I need some time to review.
