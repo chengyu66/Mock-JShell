@@ -1,9 +1,9 @@
 // **********************************************************
 // Assignment2:
 // Student1:
-// UTORID user_name:
-// UT Student #:
-// Author:
+// UTORID user_name:xincheng
+// UT Student #:1004068518
+// Author:Chengyu Xin
 //
 // Student2:
 // UTORID user_name:
@@ -32,7 +32,6 @@ package driver;
 public class JShell {
 
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
 
   }
 
