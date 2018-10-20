@@ -1,0 +1,10 @@
+What did I work on in the last three days?
+    - brainstormed design ideas for crcCards with team.
+
+What do I plan to work in the next three days?
+    - write out and finish the crcCards
+    - work on new tasks for sprint 2
+        - create and write the basic code for Directory and File Class
+
+Am I blocked on anything?
+    - 2 Midterm and a quiz is comming in next week, need to spend some time to review.
