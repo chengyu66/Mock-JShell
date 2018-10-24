@@ -1,0 +1,8 @@
+Class name: CopyFile
+Parent class (if any): FileManagement
+Subclasses (if any): 
+
+Responsibilities:
+*Move the file to another directory, and don’t remove the old file
+Collaborators:
+* OperatingSystem

@@ -1,0 +1,8 @@
+Class name: AddFileContent
+Parent class (if any): FileManagement
+Subclasses (if any): 
+
+Responsibilities:
+* Add the given string to the given name file content.
+Collaborators:
+* OperatingSystem

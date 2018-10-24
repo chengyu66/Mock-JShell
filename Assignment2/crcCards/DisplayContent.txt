@@ -1,0 +1,9 @@
+Class name: DisplayContent
+Parent class (if any): ProcessManagement
+Subclasses (if any): 
+
+Responsibilities:
+* Open the file and show the content of the file 
+Collaborators:
+* OperatingSystem
+* Screen
