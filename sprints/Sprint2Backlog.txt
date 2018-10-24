@@ -8,5 +8,5 @@ c) As a user, I should be able to quit the program
 d) As a user, I should be able to create directories, each of which may be relative to the current directory
 or may be a full path.
 e) As a user, I should be able to change the current directory to another
-f ) As a user, I should be able to see the current directory
+f) As a user, I should be able to see the current directory
 g) As a user, I should be able to add on or pinch of the current directory
