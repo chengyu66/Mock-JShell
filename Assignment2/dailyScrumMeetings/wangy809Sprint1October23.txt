@@ -1,0 +1,14 @@
+What did I work on in the last three days?
+    - Brainstormed CRC Cards with team.
+    - Writing CRC Cards with my team.
+
+What do I plan to work in the next three days?
+    - Revise CRC Cards with my team.
+    - Working on codes of Jshell
+    	- Writing the base code for Command class
+    	- Writing the base code for change directory
+
+Am I blocked on anything?
+    - Midterm exam coming.
+    - The code of changing directory need CRC Cards completed.
+    - Command class needs CRC Cards completed.
