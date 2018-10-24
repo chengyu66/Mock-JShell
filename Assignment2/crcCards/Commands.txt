@@ -1,0 +1,9 @@
+Class name: Commands
+Parent class (if any):
+Subclasses (if any): FileManagement, ProcessManagement
+
+Responsibilities:
+* Viable commands that Operative system is able to execute
+Collaborators:
+* OperatingSystem
+* Error
