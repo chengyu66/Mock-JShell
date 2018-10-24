@@ -1,0 +1,8 @@
+Class name: DirectoryStack
+
+Responsibilities:
+* Saves Directory in LIFO behavior
+
+Collaborators:
+* Pushd
+* Popd
