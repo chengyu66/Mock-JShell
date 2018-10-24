@@ -1,0 +1,9 @@
+Class name: ProcessManagement
+Parent class (if any): Commands
+Subclasses (if any): DisplayContent, ChangeDirectory, PrintList, PrintDirectory, ReplaceFileContent, AddFileContent.
+
+Responsibilities:
+* Process information
+* Produce a disired output
+Collaborators:
+* OperatingSystem
