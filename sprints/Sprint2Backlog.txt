@@ -10,3 +10,12 @@ or may be a full path.
 e) As a user, I should be able to change the current directory to another
 f) As a user, I should be able to see the current directory
 g) As a user, I should be able to add on or pinch of the current directory
+
+Specific tasks to be accomplished:
+
+
+a-1. (JShell) Begin coding the structure of the command line interpreter
+a-2. (JShell) Have the shell continually prompt the user for input
+b-1. (JShell) Parse the user input for proper keywords
+b-2. (JShell) Ability to exit the program
+c-1. (Command) Write the base code for Command class
