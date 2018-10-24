@@ -1,0 +1,8 @@
+Class name: ReplaceFileContent
+Parent class (if any): FileManagement
+Subclasses (if any): 
+
+Responsibilities:
+* Replace the given name file content with the given string.
+Collaborators:
+* OperatingSystem
