@@ -1,0 +1,10 @@
+Class name: History
+
+Responsibilities:
+Prints out the recent command. The output should have two columns.
+The first column is numbered such that the line with the highest number is the most recent
+command. The most recent command is history.
+The second column contains the actual command.
+
+Collaborators:
+* DirectoryStack
