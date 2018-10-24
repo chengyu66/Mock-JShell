@@ -1,0 +1,9 @@
+What did I work on in the last three days?
+    - My team members and I finished the design of CRC Cards and handed in it.
+    - brainstormed design ideas with the Command Class(ie history)
+    
+What do I plan to work in the next three days?
+    - Finished the coding of some subclasses of Command Class.
+
+Am I blocked on anything?
+    - 1 midterm exams in the next 3 days
