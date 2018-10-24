@@ -1,0 +1,7 @@
+Class name: Error
+
+Responsibilities:
+* Display error messages
+
+Collaborators:
+* None
