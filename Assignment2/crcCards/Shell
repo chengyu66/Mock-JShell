@@ -1,0 +1,11 @@
+Class name: Shell
+Parent class (if any): None
+Subclasses (if any): None
+
+Responsibilities:
+* Start up when the program is on
+* Translate user input messages as commands to OperatingSystem
+* Shut down when quit the program
+Collaborators:
+* UserInput
+* OperatingSystem

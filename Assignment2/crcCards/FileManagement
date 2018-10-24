@@ -1,0 +1,9 @@
+Class name: FileManagement
+Parent class (if any): Commands
+Subclasses (if any): MoveFile, RenameFile, CopyFile, ReplaceFileContent, MakeNewDirectory
+
+Responsibilities:
+* show the file name in the directory
+Collaborators:
+* OperatingSystem
+* Screen
