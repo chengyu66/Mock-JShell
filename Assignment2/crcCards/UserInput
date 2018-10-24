@@ -1,9 +1,0 @@
-Class name: UserInput
-Parent class (if any): None
-Subclasses (if any): Keyboard
-
-Responsibilities:
-* Take input messages from user
-Collaborators:
-* Shell
-* Screen
