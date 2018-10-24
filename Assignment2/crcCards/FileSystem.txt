@@ -1,0 +1,7 @@
+Class name: FileSystem
+
+Responsibilities:
+* Store data in file with directory
+
+Collaborators:
+* Directory

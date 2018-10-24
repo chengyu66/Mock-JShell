@@ -1,0 +1,7 @@
+Class name: Directory
+
+Responsibilities:
+* Point path to memory
+
+Collaborators:
+* FileSystem
