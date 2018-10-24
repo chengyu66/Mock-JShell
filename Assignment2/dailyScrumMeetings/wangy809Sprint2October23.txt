@@ -1,6 +1,7 @@
 What did I work on in the last three days?
     - Brainstormed CRC Cards with team.
     - Writing CRC Cards with my team.
+    - Complete Sprint2Backlog with my team.
 
 What do I plan to work in the next three days?
     - Revise CRC Cards with my team.
