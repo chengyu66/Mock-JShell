@@ -1,0 +1,8 @@
+Class name: Popd
+
+Responsibilities:
+* Remove the top entry from the directory stack
+* changes the new current directory to the top entry of directory stack
+
+Collaborators:
+* DirectoryStack
