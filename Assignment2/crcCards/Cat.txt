@@ -1,0 +1,7 @@
+Class name: Cat
+
+Responsibilities:
+Displays the contents of File and other Files concatenated in the shell.
+
+Collaborators:
+* FileSystem
