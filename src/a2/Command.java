@@ -14,6 +14,7 @@ public class Command {
     return validCommands;
   }
   
+  // every subclass of Command should override this method
   public String run() {
     return "";
   }
