@@ -1,0 +1,10 @@
+What did I work on in the last three days?
+    - brainstorm the Command of Exit, Mkdir, Cd and Command Class
+    - reassignment tasks in team
+    
+What do I plan to work in the next three days?
+    - have a early version of Command Class and finish Exit Class
+    - help my teammates finish File and Directory Class to keep the process 
+
+Am I blocked on anything?
+    - Need File and Directory Class to work on the rest of tasks
