@@ -1,0 +1,9 @@
+What did I work on in the last three days?
+    - Brainstormed the relationship between the Commend class and JShell.
+    - Finish the History Class, the subclass of Commend
+    
+What do I plan to work in the next three days?
+    - Finished the coding of some subclasses of Command Class.
+
+Am I blocked on anything?
+    - I still consider using the Arraylist, linkList or Tree in FileSystem.
