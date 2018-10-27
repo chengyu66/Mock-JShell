@@ -1,0 +1,12 @@
+What did I work on in the last three days?
+    - I and my team members came to a solid version of CRCcards
+    and we uploaded them
+    - I started brainstorming for the Command I'm in charge of which are
+    PushdDIR, Popd, StackDirectory
+    - Jshell is redistruted to one of my teammates
+    
+What do I plan to work in the next three days?
+    - Get PushedDIR, Popd and StackDirectory done
+
+Am I blocked on anything?
+    - 2 Quizes and 2 midterm exams in the next 3 days
