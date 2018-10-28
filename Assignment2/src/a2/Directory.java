@@ -14,7 +14,7 @@ public class Directory extends FileDirectory{
 		subItem.add(items);
 	}
 	
-	public ArrayList<FileDirectory> getDub(){
+	public ArrayList<FileDirectory> getSub(){
 		return subItem;
 	}
 }
