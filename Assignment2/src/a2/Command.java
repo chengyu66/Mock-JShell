@@ -15,7 +15,9 @@ public class Command {
   }
   
   // every subclass of Command should override this method
-  public String run() {
-    return "";
+  public void run() {}
+  
+  public boolean isValid() {
+    return true;
   }
 }
