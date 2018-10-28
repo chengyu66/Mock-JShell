@@ -2,16 +2,19 @@ package a2;
 
 import java.util.ArrayList;
 
-public class Directory {
+public class Directory extends FileDirectory{
+	private ArrayList<FileDirectory> subItem;
 	
-	private String name;
-	private ArrayList<Directory> subDirectory;
-	private ArrayList<File> Files;
-	
-	public Directory(String name){
-		this.name = name;
-		this.Files = new ArrayList<File>();
-		this.subDirectory = new ArrayList<Directory>();
+	public Directory(String name, Directory parent){
+		super(name, parent);
+		this.subItem = new ArrayList<FileDirectory>();
 	}
-
+	
+	public void setSub(FileDirectory items){
+		subItem.add(items);
+	}
+	
+	public ArrayList<FileDirectory> getDub(){
+		return subItem;
+	}
 }
