@@ -11,6 +11,7 @@ public class Command {
   public Command(String input) {
     String[] my_list = input.split(" ");
     fpart = my_list[0];
+    spart = my_list[1];
     if(this.isValid(input)){
       this.run(fpart);
     }
