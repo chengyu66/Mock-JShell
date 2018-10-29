@@ -34,21 +34,24 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 import a2.Command;
-//import a2.Exit;
+import a2.Pwd;
+import a2.FileSystem;
 
 public class JShell {
 
   private boolean terminate;
-  Map<String, Command> map;
-  Command com;
-  //Exit exit;
+  private Map<String, Command> map;
+  private FileSystem fs;
+  private Command com;
+  Pwd pwd;
 
   JShell() {
     terminate = false;
-    com = new Command();
-    //exit = new Exit();
+    fs = new FileSystem("Windows");
+    com = new Command(null);
+    pwd = new Pwd(fs);
     map = new HashMap<String, Command>();
-    //map.put("exit", exit);
+    map.put("pwd", pwd);
   }
 
   public static void main(String[] args) {
