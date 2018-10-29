@@ -41,6 +41,9 @@ public class FileSystem {
 			if (index != -1) {
 				curr = (Directory) curr.getSub().get(index);
 			}
+			else {
+				return null;
+			}
 		}
 		return curr;
 	}
