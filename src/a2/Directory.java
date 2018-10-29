@@ -22,7 +22,7 @@ public class Directory extends FileDirectory{
 		int num = 0, index = -1;
 		
 		while(num<subItem.size()){
-			if (subItem.get(0).getName().equals(name)){
+			if (subItem.get(num).getName().equals(name)){
 				index = num;
 				break;
 			}
