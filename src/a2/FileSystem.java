@@ -17,10 +17,28 @@ public class FileSystem {
 	}
 	
 	public Directory getCurrentDirectory() {
-		return this.currentDirectory
+		return this.currentDirectory;
 	}
 	
 	// this method is additional.
 	// you pass in a path, FileSystem get to that directory
-	public void Trace(String dir) {
+	public void Trace(String path) {
+		// Decompose the string <path> into the name of each folder
+		String[] folders = path.split("/");
+		
+		// The directory currently getting examined
+		Directory curr = FileSystem.getRoot();
+				
+		// loop through the folders
+		For (String folderName: folders);{
+			int index = curr.findSub(folderName);
+			// Directory doesn't exist
+			if (index != -1) {
+				ArrayList<FileDirectory> currList = curr.findSub(folderName);
+				
+				curr = currList.getIndex(index);
+			}
+		}
+		return curr;
+	}
 }
