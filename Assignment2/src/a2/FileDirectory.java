@@ -26,7 +26,7 @@ public class FileDirectory {
 		FileDirectory currParent = this.parent;
 		
 		while (currParent != null){
-			output = currParent.getName()+"\\"+output;
+			output = currParent.getName()+"/"+output;
 			currParent = currParent.getParent();
 		}
 		return output;
