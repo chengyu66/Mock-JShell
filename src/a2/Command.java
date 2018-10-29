@@ -22,4 +22,8 @@ public class Command {
     }
     return result;
   }
+  
+  public String errorMessage() {
+    return "Wrong Input Format";
+  }
 }
