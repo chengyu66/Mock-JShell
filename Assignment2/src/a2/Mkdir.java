@@ -30,6 +30,6 @@ public class Mkdir extends Command {
   }
 
   public String errorMessage() {
-    return "correct format of Command mkdir: mkdir [DIR or PATH]";
+    return "correct format of Command mkdir: mkdir (DIR or PATH)";
   }
 }
