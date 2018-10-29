@@ -12,7 +12,7 @@ public class FileSystem {
 	}
 	
 	public void setCurrentDirectory(Directory newDirectory) {
-		this.currentDirectory = newDirectory
+		this.currentDirectory = newDirectory;
 		
 	}
 	
