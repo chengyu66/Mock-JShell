@@ -1,44 +1,21 @@
 package a2;
 
+import java.util.Arrays;
+
 public class Command {
-  public String fpart;
-  public String spart;
   
-  private static String[] validCommands =
+  private String[] validCommands =
     {"exit", "mkdir", "cd", "is", "pwd", "pushd", "popd", "history", "cat",
         "echo", "man"};
   
-  public Command(String input) {
-    String[] my_list = input.split(" ");
-    fpart = my_list[0];
-    spart = my_list[1];
-    if(this.isValid(input)){
-      this.run(fpart);
-    }
-  }
-  
-  public String[] getValidCommands() {
-    return validCommands;
-  }
+  public Command() {}
   
   // every subclass of Command should override this method
-  public void run(String cmd) {
-    if(cmd == "cd") {
-      a2.ChangeDirectory c = new ChangeDirectory(cmd);
-    }
-    // other cases writing here
-  }
+  public void run(String[] input) {}
   
-  public boolean isValid(String input) {
+  public boolean isValid(String command) {
     boolean result = false;
-    if(fpart.isEmpty()) {
-      result = false;
-    } else {
-      for(String str:validCommands) {
-        if(str == fpart) {
-          result = true;
-        }
-      }
+    if (Arrays.asList(validCommands).contains(command)) {
       result = true;
     }
     return result;
