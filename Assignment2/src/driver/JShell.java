@@ -5,10 +5,10 @@
 // UT Student #:1004068518
 // Author:Chengyu Xin
 //
-// Student2:
-// UTORID user_name:
-// UT Student #:
-// Author:
+// Student2: 
+// UTORID user_name: mihao
+// UT Student #: 1004418203
+// Author: Hao Mi
 //
 // Student3:
 // UTORID user_name:
@@ -33,11 +33,7 @@ import java.util.Arrays;// for testing
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import a2.Command;
-import a2.Pwd;
-import a2.FileSystem;
-import a2.Ls;
-import a2.Mkdir;
+import a2.*;
 
 public class JShell {
 
@@ -48,6 +44,7 @@ public class JShell {
   private Pwd pwd;
   private Mkdir mkdir;
   private Ls ls;
+  private History history;
 
   JShell() {
     terminate = false;
@@ -56,10 +53,12 @@ public class JShell {
     pwd = new Pwd(fs);
     mkdir = new Mkdir(fs);
     ls = new Ls(fs);
+    history = new History(fs);
     map = new HashMap<String, Command>();
     map.put("pwd", pwd);
     map.put("mkdir", mkdir);
     map.put("ls", ls);
+    map.put("history", history);
   }
 
   public static void main(String[] args) {
@@ -82,6 +81,7 @@ public class JShell {
       if (command.equals("exit")) {
         terminate = true;
       } else {
+    	  history.addHistory(input);
         (map.get(input[0])).run(input);
       }
     } else {
