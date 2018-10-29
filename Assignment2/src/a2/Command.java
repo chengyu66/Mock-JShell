@@ -3,11 +3,14 @@ package a2;
 import java.util.Arrays;
 
 public class Command {
-
-  private String[] validCommands = {"exit", "mkdir", "cd", "is", "pwd", "pushd",
+  
+  public static FileSystem fs;
+  private String[] validCommands = {"exit", "mkdir", "cd", "ls", "pwd", "pushd",
       "popd", "history", "cat", "echo", "man"};
 
-  public Command() {}
+  public Command(FileSystem fs) {
+    Command.fs = fs;
+  }
 
   // Every subClass should override this method
   public void run(String[] input) {}
