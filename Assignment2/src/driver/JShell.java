@@ -36,6 +36,7 @@ import java.util.Scanner;
 import a2.Command;
 import a2.Pwd;
 import a2.FileSystem;
+import a2.Ls;
 import a2.Mkdir;
 
 public class JShell {
@@ -46,6 +47,7 @@ public class JShell {
   private Command com;
   private Pwd pwd;
   private Mkdir mkdir;
+  private Ls ls;
 
   JShell() {
     terminate = false;
@@ -53,9 +55,11 @@ public class JShell {
     com = new Command(null);
     pwd = new Pwd(fs);
     mkdir = new Mkdir(fs);
+    ls = new Ls(fs);
     map = new HashMap<String, Command>();
     map.put("pwd", pwd);
     map.put("mkdir", mkdir);
+    map.put("ls", ls);
   }
 
   public static void main(String[] args) {
