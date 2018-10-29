@@ -1,7 +1,5 @@
 package a2;
 
-import java.util.ArrayList;
-
 public class FileSystem {
 	
 	private Directory root;
