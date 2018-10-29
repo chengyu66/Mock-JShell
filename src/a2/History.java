@@ -23,6 +23,11 @@ public class History extends Command{
 	        {
 	            System.out.println(historyList.get(i));
 	        }
+	    } else if(input.length == 1) {
+	      for (int i = 0;i<historyList.size(); i++)
+          {
+              System.out.println(historyList.get(i));
+          }
 	    } else {
 	      System.out.println(super.errorMessage());
 	      System.out.println(errorMessage());
