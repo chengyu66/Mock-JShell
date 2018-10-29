@@ -27,7 +27,7 @@ public class FileSystem {
 	// this method is additional.
 	// you pass in a path, FileSystem get to that directory
 	// need to consider the case of File.
-	public Directory Trace(String path) {
+	public Directory trace(String path) {
 		// Decompose the string <path> into the name of each folder
 		String[] folders = path.split("/");
 
