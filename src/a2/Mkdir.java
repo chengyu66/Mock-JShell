@@ -7,7 +7,7 @@ public class Mkdir extends Command {
   }
   
   public void run(String[] input) {
-    if (input.length == 2) {
+    if (isValid(input)) {
       if (input[1].contains("/")) {
         //
       } else {
@@ -16,7 +16,20 @@ public class Mkdir extends Command {
         (fs.getCurrentDirectory()).setSub(newDirectory);
       }
     } else {
-      // wrong input
+      System.out.println(super.errorMessage());
+      System.out.println(errorMessage());
     }
+  }
+  
+  public boolean isValid(String[] input) {
+    boolean result = false;
+    if (input.length == 2) {
+      result = true;
+    }
+    return result;
+  }
+
+  public String errorMessage() {
+    return "correct format of Command mkdir: mkdir [DIR or PATH]";
   }
 }
