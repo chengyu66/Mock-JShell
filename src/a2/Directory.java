@@ -29,5 +29,7 @@ public class Directory extends FileDirectory{
 			
 			num++;
 		}
+		
+		return index;
 	}
 }
