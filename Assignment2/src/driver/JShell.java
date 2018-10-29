@@ -81,10 +81,11 @@ public class JShell {
       if (command.equals("exit")) {
         terminate = true;
       } else {
-    	  history.addHistory(input);
+        history.addHistory(input);
         (map.get(input[0])).run(input);
       }
     } else {
+      history.addHistory(input);
       System.out.println(input[0] + ": command not found");
     }
   }
