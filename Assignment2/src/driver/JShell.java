@@ -31,57 +31,64 @@ package driver;
 
 import java.util.Arrays;// for testing
 import java.util.Scanner;
+import a2.Command;
 import a2.Exit;
 
 public class JShell {
 
-  private static boolean terminate = false;
+  private boolean terminate;
+  Command com;
   Exit exit;
 
   JShell() {
+    terminate = false;
+    com = new Command();
     exit = new Exit();
   }
 
   public static void main(String[] args) {
     JShell jShell = new JShell();
-    while (!terminate) {
+    while (!jShell.terminate) {
       System.out.print("/#: ");
       Scanner in = new Scanner(System.in);
       String userInput = in.nextLine().trim();
       String input[] = userInput.split("\\s+");
       // for testing, delete this after!!!
       System.out.println(Arrays.toString(input));
-      jShell.execute(userInput, input);
+      jShell.execute(input);
     }
   }
 
-  public void execute(String userInput, String[] input) {
-    if (input[0].equals("exit")) {
-      terminate = true;
-      exit.run();
-    /*} else if (input[0].equals("mkdir")) {
-      mkdir.run();
-    } else if (input[0].equals("cd")) {
-      cd.run();
-    } else if (input[0].equals("ls")) {
-      ls.run();
-    } else if (input[0].equals("pwd")) {
-      pwd.run();
-    } else if (input[0].equals("pushd")) {
-      pushd.run();
-    } else if (input[0].equals("popd")) {
-      popd.run();
-    } else if (input[0].equals("history")) {
-      history.run();
-    } else if (input[0].equals("cat")) {
-      cat.run();
-    } else if (input[0].equals("echo")) {
-      echo.run();
-    } else if (input[0].equals("man")) {
-      man.run();
-    */} else {
+  public void execute(String[] input) {
+    String command = input[0];
+    if (com.isValid(command)) {
+      if (command.equals("exit")) {
+        terminate = true;
+        exit.run();
+      /*} else if (command.equals("mkdir")) {
+        mkdir.run(input);
+      } else if (command.equals("cd")) {
+        cd.run();
+      } else if (command.equals("ls")) {
+        ls.run();
+      } else if (command.equals("pwd")) {
+        pwd.run();
+      } else if (command.equals("pushd")) {
+        pushd.run();
+      } else if (command.equals("popd")) {
+        popd.run();
+      } else if (command.equals("history")) {
+        history.run();
+      } else if (command.equals("cat")) {
+        cat.run();
+      } else if (command.equals("echo")) {
+        echo.run();
+      } else if (command.equals("man")) {
+        man.run();
+      */
+      }
+    } else {
       System.out.println(input[0] + ": command not found");
     }
   }
-
 }
