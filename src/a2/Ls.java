@@ -3,6 +3,7 @@ package a2;
 
 public class Ls extends Command{
 	
+  /*
 	public Ls() {
 		
 		// get the current directory
@@ -19,5 +20,23 @@ public class Ls extends Command{
 		// I will do this later, get Trace done first
 		Directory targetPath = FileSystem.trace(path);
 		
-	}
+	}*/
+  public Ls(FileSystem fs) {
+    super(fs);
+  }
+  
+  public void run(String[] input) {
+    String output = "";
+    if (input.length == 1) {
+      for (FileDirectory fd: fs.getCurrentDirectory().getSub()) {
+        output += fd.getName() + "   ";
+      }
+      System.out.println(output.trim());
+    } else if(input.length == 2) {
+      // if input path
+      // need trace
+    } else {
+      // wrong input
+    }
+  }
 }
