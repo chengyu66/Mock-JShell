@@ -83,7 +83,8 @@ public class JShell {
         cat.run();
       } else if (command.equals("echo")) {
         echo.run();
-      } else if (command.equals("man")) {
+      // else it can only be command: man
+      } else {
         man.run();
       */
       }
