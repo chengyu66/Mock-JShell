@@ -36,6 +36,7 @@ import java.util.Scanner;
 import a2.Command;
 import a2.Pwd;
 import a2.FileSystem;
+import a2.Mkdir;
 
 public class JShell {
 
@@ -43,15 +44,18 @@ public class JShell {
   private Map<String, Command> map;
   private FileSystem fs;
   private Command com;
-  Pwd pwd;
+  private Pwd pwd;
+  private Mkdir mkdir;
 
   JShell() {
     terminate = false;
     fs = new FileSystem("Windows");
     com = new Command(null);
     pwd = new Pwd(fs);
+    mkdir = new Mkdir(fs);
     map = new HashMap<String, Command>();
     map.put("pwd", pwd);
+    map.put("mkdir", mkdir);
   }
 
   public static void main(String[] args) {
