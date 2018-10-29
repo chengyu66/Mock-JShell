@@ -17,4 +17,17 @@ public class Directory extends FileDirectory{
 	public ArrayList<FileDirectory> getSub(){
 		return subItem;
 	}
+	
+	public int findSub(String name){
+		int num = 0, index = -1;
+		
+		while(num<subItem.size()){
+			if (subItem.get(0).getName().equals(name)){
+				index = num;
+				break;
+			}
+			
+			num++;
+		}
+	}
 }
