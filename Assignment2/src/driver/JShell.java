@@ -29,7 +29,7 @@
 // *********************************************************
 package driver;
 
-import java.util.Arrays;// for testing
+import java.util.Arrays;
 import java.util.Scanner;
 import a2.Command;
 import a2.Exit;
