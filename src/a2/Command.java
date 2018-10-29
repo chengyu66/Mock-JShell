@@ -9,7 +9,7 @@ public class Command {
 
   public Command() {}
 
-  // every subclass of Command should override this method
+  // Every subClass should override this method
   public void run(String[] input) {}
 
   public boolean isValid(String command) {
