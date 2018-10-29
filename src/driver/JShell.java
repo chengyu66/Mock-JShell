@@ -29,34 +29,40 @@
 // *********************************************************
 package driver;
 
-import java.util.Arrays;
+import java.util.Arrays;// for testing
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 import a2.Command;
-import a2.Exit;
+//import a2.Exit;
 
 public class JShell {
 
   private boolean terminate;
+  Map<String, Command> map;
   Command com;
-  Exit exit;
+  //Exit exit;
 
   JShell() {
     terminate = false;
     com = new Command();
-    exit = new Exit();
+    //exit = new Exit();
+    map = new HashMap<String, Command>();
+    //map.put("exit", exit);
   }
 
   public static void main(String[] args) {
     JShell jShell = new JShell();
+    Scanner in = new Scanner(System.in);
     while (!jShell.terminate) {
       System.out.print("/#: ");
-      Scanner in = new Scanner(System.in);
       String userInput = in.nextLine().trim();
       String input[] = userInput.split("\\s+");
       // for testing, delete this after!!!
       System.out.println(Arrays.toString(input));
       jShell.execute(input);
     }
+    in.close();
   }
 
   public void execute(String[] input) {
@@ -64,29 +70,8 @@ public class JShell {
     if (com.isValid(command)) {
       if (command.equals("exit")) {
         terminate = true;
-        exit.run();
-      /*} else if (command.equals("mkdir")) {
-        mkdir.run(input);
-      } else if (command.equals("cd")) {
-        cd.run();
-      } else if (command.equals("ls")) {
-        ls.run();
-      } else if (command.equals("pwd")) {
-        pwd.run();
-      } else if (command.equals("pushd")) {
-        pushd.run();
-      } else if (command.equals("popd")) {
-        popd.run();
-      } else if (command.equals("history")) {
-        history.run();
-      } else if (command.equals("cat")) {
-        cat.run();
-      } else if (command.equals("echo")) {
-        echo.run();
-      // else it can only be command: man
       } else {
-        man.run();
-      */
+        (map.get(input[0])).run(input);
       }
     } else {
       System.out.println(input[0] + ": command not found");
