@@ -1,8 +1,0 @@
-Class name: Exit
-Parent class (if any): Command
-Subclasses (if any): 
-
-Responsibilities:
-* Quit the program
-Collaborators:
-* Shell
