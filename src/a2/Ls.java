@@ -36,7 +36,12 @@ public class Ls extends Command{
       // if input path
       // need trace
     } else {
-      // wrong input
+      System.out.println(super.errorMessage());
+      System.out.println(errorMessage());
     }
+  }
+  
+  public String errorMessage() {
+    return "correct format of Command ls: ls [PATH]";
   }
 }
