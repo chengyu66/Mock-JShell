@@ -1,14 +1,23 @@
 package a2;
 
 public class FileSystem {
-	
+  
+	private static FileSystem ref = null;
 	private Directory root;
 	private Directory currentDirectory;
 	
-	public FileSystem(String nameOfRoot) {
+	// this constructor creates a filesystem instance
+	private FileSystem(String nameOfRoot) {
 		this.root = new Directory(nameOfRoot, null);
 		this.currentDirectory = root;
 		
+	}
+	
+	public static FileSystem createInstanceOfFileSystem() {
+	  if(ref == null) {
+	    ref = new FileSystem("MyComputer");
+	  }
+	  return ref;
 	}
 	
 	public void setCurrentDirectory(Directory newDirectory) {
