@@ -55,14 +55,17 @@ public class JShell {
     terminate = false;
     // create a FileSystem with SingletonDesignPattern
     fs = FileSystem.createInstanceOfFileSystem();
-    // for testing, delete this after!!!
+    // for testing, delete this after!!!!!
     Directory a = fs.getRoot();
     a.setSub(new Directory("user",a));
     Directory b = (Directory)a.getSub().get(0);
     b.setSub(new Directory("Application",b));
     b.setSub(new Directory("Desktop",b));
     Directory c = (Directory)b.getSub().get(0);
-    c.setSub(new Directory("Music",c));
+    File music = new File("Music", c);
+    c.setSub(music);
+    music.setContent("DreamTeam");
+    
     
     // creating command objects
     com = new Command(fs);
