@@ -29,19 +29,29 @@ public class FileSystem {
 	// need to consider the case of File.
 	public Directory trace(String path) {
 		// Decompose the string <path> into the name of each folder
+	    if (path.startsWith("/")) {
+	      path = path.substring(1);
+	    }
 		String[] folders = path.split("/");
-
 		// The directory currently getting examined
-		Directory curr = this.getRoot();
-				
-		// loop through the folders
+		Directory curr;
+		if (folders[0].equals(root.getName())) {
+		  curr=root;
+		}else if (currentDirectory.findSub(folders[0])!=-1) {
+		  curr=currentDirectory;
+	    }else {
+	      return null;
+	    }
+    // loop through the folders
 		for (String folderName: folders){
 			int index = curr.findSub(folderName);
-			// Directory doesn't exist
+			// Directory found
 			if (index != -1) {
 				curr = (Directory) curr.getSub().get(index);
 			}
-			else {
+			else if (folderName.equals(root.getName())){
+			    curr = root;
+			}else {
 				return null;
 			}
 		}
