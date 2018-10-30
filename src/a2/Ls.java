@@ -15,8 +15,19 @@ public class Ls extends Command{
       }
       System.out.println(output.trim());
     } else if(input.length == 2) {
-      // if input path
-      // need trace
+      String path = input[1]; 
+      FileDirectory fd = fs.trace(path);
+      if (fd instanceof File) {
+        System.out.println(((File) fd).getContent());
+      } else if (fd instanceof Directory) {
+        String contents = "";
+        for (FileDirectory fdContents: ((Directory) fd).getSub()) {
+          contents += fdContents.getName() + "   ";
+        }
+        System.out.println(fd.getName() + ": " + contents.trim());
+      } else {
+        System.out.println("No such file or directory");
+      }
     } else {
       System.out.println(super.errorMessage());
       System.out.println(errorMessage());
