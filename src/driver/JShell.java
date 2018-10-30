@@ -64,7 +64,7 @@ public class JShell {
     Directory c = (Directory)b.getSub().get(0);
     c.setSub(new Directory("Music",c));
     
-    // creating comment objects
+    // creating command objects
     com = new Command(fs);
     pwd = new PrintDirectory(fs);
     cd = new ChangeDirectory(fs);
