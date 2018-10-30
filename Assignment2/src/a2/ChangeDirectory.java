@@ -14,9 +14,11 @@ public class ChangeDirectory extends Command{
       Directory dir = fs.trace(path);
       if (dir != null){
       fs.setCurrentDirectory(dir);
+      }else {
+        System.out.println(errorMessage());
       }
     }else {
-      System.out.println(errorMessage());
+      System.out.println(super.errorMessage());
     }
   }
   public String errorMessage() {
