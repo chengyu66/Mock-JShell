@@ -60,7 +60,7 @@ public class JShell {
     c.setSub(new Directory("Music",c));
     
     
-    com = new Command(null);
+    com = new Command(fs);
     pwd = new PrintDirectory(fs);
     cd = new ChangeDirectory(fs);
     mkdir = new Mkdir(fs);
