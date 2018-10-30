@@ -11,7 +11,10 @@ public class PrintDirectory extends Command{
     if (fs!= null) {
       System.out.println(fs.getCurrentDirectory());
     }else {
-      System.out.println("FileSystem not created");
+      System.out.println(errorMessage());
     }
+  }
+  public String errorMessage() {
+    return "FileSystem not created";
   }
 }
