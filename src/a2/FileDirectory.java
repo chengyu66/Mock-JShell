@@ -22,11 +22,11 @@ public class FileDirectory {
 	}
 	
 	public String toString(){
-		String output = this.name;
+		String output = "/"+this.name;
 		FileDirectory currParent = this.parent;
 		
 		while (currParent != null){
-			output = currParent.getName()+"/"+output;
+			output = "/"+currParent.getName()+output;
 			currParent = currParent.getParent();
 		}
 		return output;
