@@ -11,9 +11,9 @@
 // Author: Hao Mi
 //
 // Student3:
-// UTORID user_name:
-// UT Student #:
-// Author:
+// UTORID user_name: wangy809
+// UT Student #: 1004042617
+// Author: Yunfei Wang
 //
 // Student4:
 // UTORID user_name:
@@ -41,22 +41,35 @@ public class JShell {
   private Map<String, Command> map;
   private FileSystem fs;
   private Command com;
-  private Pwd pwd;
+  private PrintDirectory pwd;
   private Mkdir mkdir;
-  private Ls ls;
+  private ChangeDirectory cd;
   private History history;
+  private Ls ls;
 
   JShell() {
     terminate = false;
     fs = new FileSystem("Windows");
+    // for testing, create FileSystem to test pwd,cd
+    Directory a = fs.getRoot();
+    a.setSub(new Directory("user",a));
+    Directory b = (Directory)a.getSub().get(0);
+    b.setSub(new Directory("Application",b));
+    b.setSub(new Directory("Desktop",b));
+    Directory c = (Directory)b.getSub().get(0);
+    c.setSub(new Directory("Music",c));
+    
+    
     com = new Command(null);
-    pwd = new Pwd(fs);
+    pwd = new PrintDirectory(fs);
+    cd = new ChangeDirectory(fs);
     mkdir = new Mkdir(fs);
     ls = new Ls(fs);
     history = new History(fs);
     map = new HashMap<String, Command>();
     map.put("pwd", pwd);
     map.put("mkdir", mkdir);
+    map.put("cd", cd);
     map.put("ls", ls);
     map.put("history", history);
   }
