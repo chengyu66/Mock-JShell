@@ -29,6 +29,7 @@
 // *********************************************************
 package driver;
 
+// import what we need
 import java.util.Arrays;// for testing
 import java.util.HashMap;
 import java.util.Map;
@@ -37,7 +38,9 @@ import a2.*;
 
 public class JShell {
 
+  // a boolean variable to control the status of JShell
   private boolean terminate;
+  // a dictionary that maps String as key to Command as value
   private Map<String, Command> map;
   private FileSystem fs;
   private Command com;
@@ -47,10 +50,13 @@ public class JShell {
   private History history;
   private Ls ls;
 
+  // constructor
   JShell() {
+    // JShell will be closed when terminate is true
     terminate = false;
-    fs = new FileSystem("Windows");
-    // for testing, create FileSystem to test pwd,cd
+    // create a FileSystem with SingletonDesignPattern
+    fs = FileSystem.createInstanceOfFileSystem();
+    // for testing, delete this after!!!
     Directory a = fs.getRoot();
     a.setSub(new Directory("user",a));
     Directory b = (Directory)a.getSub().get(0);
@@ -59,14 +65,16 @@ public class JShell {
     Directory c = (Directory)b.getSub().get(0);
     c.setSub(new Directory("Music",c));
     
-    
+    // creating comment objects
     com = new Command(fs);
     pwd = new PrintDirectory(fs);
     cd = new ChangeDirectory(fs);
     mkdir = new Mkdir(fs);
     ls = new Ls(fs);
     history = new History(fs);
+    // create the dictionary that maps String as key to Command as value
     map = new HashMap<String, Command>();
+    // put corresponding Command by String
     map.put("pwd", pwd);
     map.put("mkdir", mkdir);
     map.put("cd", cd);
@@ -74,31 +82,50 @@ public class JShell {
     map.put("history", history);
   }
 
+  // main class of JShell
   public static void main(String[] args) {
+    // Generates a JShell object
     JShell jShell = new JShell();
+    // create a scanner for user inputs
     Scanner in = new Scanner(System.in);
+    // keep running until terminate is true
     while (!jShell.terminate) {
+      // print statement to ask for user's input
       System.out.print("/#: ");
+      // trim the extra spaces at the start and end of user input
       String userInput = in.nextLine().trim();
+      // turns user input into array's element by spaces between
       String input[] = userInput.split("\\s+");
       // for testing, delete this after!!!
       System.out.println(Arrays.toString(input));
+      // execute the input
       jShell.execute(input);
     }
+    // close the scanner
     in.close();
   }
 
   public void execute(String[] input) {
+    // save the first word of user input
     String command = input[0];
+    // check if the first word is a valid command
     if (com.isValid(command)) {
+      // if the command is exit
       if (command.equals("exit")) {
+        // change the state of terminate to close JShell
         terminate = true;
+      // else execute the command
       } else {
+        // save the command in history
         history.addHistory(input);
+        // execute the corresponding command by user input
         (map.get(input[0])).run(input);
       }
+    // else it is not a valid command
     } else {
+      // save the input in history
       history.addHistory(input);
+      // print the message
       System.out.println(input[0] + ": command not found");
     }
   }
