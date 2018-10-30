@@ -30,7 +30,6 @@
 package driver;
 
 // import what we need
-import java.util.Arrays;// for testing
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -96,8 +95,6 @@ public class JShell {
       String userInput = in.nextLine().trim();
       // turns user input into array's element by spaces between
       String input[] = userInput.split("\\s+");
-      // for testing, delete this after!!!
-      System.out.println(Arrays.toString(input));
       // execute the input
       jShell.execute(input);
     }
