@@ -12,6 +12,7 @@ public class Directory extends FileDirectory{
 	
 	public void setSub(FileDirectory items){
 		subItem.add(items);
+		items.setParent(this);
 	}
 	
 	public ArrayList<FileDirectory> getSub(){
