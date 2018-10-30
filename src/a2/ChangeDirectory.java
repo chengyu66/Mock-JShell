@@ -9,7 +9,7 @@ public class ChangeDirectory extends Command{
     
   }
   public void run(String[] input) {
-    if (this.isCorrect(input)) {
+    if (this.isValid(input)) {
       String path = input[1]; 
       Directory dir = fs.trace(path);
       if (dir != null){
@@ -24,7 +24,7 @@ public class ChangeDirectory extends Command{
   public String errorMessage() {
     return "No such file or directory";
   }
-  public boolean isCorrect(String[] input) {
+  public boolean isValid(String[] input) {
     boolean result = false;
     if (input.length>=2) {
       result = true;
