@@ -61,8 +61,10 @@ public class JShell {
     Directory b = (Directory)a.getSub().get(0);
     b.setSub(new Directory("Application",b));
     b.setSub(new Directory("Desktop",b));
+    File juben = new File("juben.txt", b);
+    b.setSub(juben);
     Directory c = (Directory)b.getSub().get(0);
-    File music = new File("Music", c);
+    File music = new File("Music.txt", c);
     c.setSub(music);
     music.setContent("DreamTeam");
     
