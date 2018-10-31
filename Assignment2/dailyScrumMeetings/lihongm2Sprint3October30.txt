@@ -1,0 +1,14 @@
+What did I work on in the last three days?
+	- I and my teammates came up the design of FileSystem
+	- FileSystem is Implemented
+	- DirectoryStack is Created
+	- Ls command is completed
+	- The relationship between FileSystem and Directory, 
+	File is clear and implemented
+	
+What do I plan to work in the next three days?
+    - Get PushedDIR, Popd done
+    - testing
+
+Am I blocked on anything?
+    - Nothing
