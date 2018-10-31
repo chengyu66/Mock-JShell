@@ -24,8 +24,6 @@ public class Mkdir extends Command {
                 currDir);
             currDir.setSub(newDirectory); 
           }
-          index = (currDir).findSub(input[i]);
-          currDir = (Directory) currDir.getSub().get(index);
         }
       }
       if(output != "") {
