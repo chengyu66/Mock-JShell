@@ -11,10 +11,12 @@ public class ChangeDirectory extends Command{
   public void run(String[] input) {
     if (this.isValid(input)) {
       String path = input[1]; 
-      Directory dir = fs.trace(path);
-      if (dir != null){
-      fs.setCurrentDirectory(dir);
-      }else {
+      FileDirectory fd = fs.trace(path);
+      if (fd instanceof File) {
+        System.out.println("Not a directory");
+      } else if (fd instanceof Directory) {
+        fs.setCurrentDirectory((Directory)fd);
+      } else {
         System.out.println(errorMessage());
       }
     }else {
