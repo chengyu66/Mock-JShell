@@ -31,6 +31,15 @@ public class FileSystem {
 		return this.currentDirectory;
 	}
 	
+	
+	public DirectoryStack getDirectoryStack() {
+		return directoryStack;
+	}
+
+	public void setDirectoryStack(DirectoryStack directoryStack) {
+		this.directoryStack = directoryStack;
+	}
+	
 	public Directory getRoot(){
 		return this.root;
 	}
