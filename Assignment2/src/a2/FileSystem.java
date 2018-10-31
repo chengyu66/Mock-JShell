@@ -64,6 +64,7 @@ public class FileSystem {
             }else {
                 return null;
             }
+          // case when there is a file inside a path
 		  } else {
 		    System.out.println("File is not a directory");
 		    return null;
