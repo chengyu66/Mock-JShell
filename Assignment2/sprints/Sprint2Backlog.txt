@@ -19,3 +19,27 @@ a-2. (JShell) Have the shell continually prompt the user for input
 b-1. (JShell) Parse the user input for proper keywords
 b-2. (JShell) Ability to exit the program
 c-1. (Command) Write the base code for Command class
+c-2. (Command) Write the base code for change directory
+c-3. (Command) Write pushdDIR, DirectoryStack and Popd
+c-4. (Command) Write the base code to print directory
+c-5. (Command) Write the base code to create a directory
+d-1. (Command) Write the base code for creating new directory
+e-1. (Directory) Write the base code for the Directory class
+e-2. (File) Write the base code for the File class
+
+
+These tasks are assigned as follows:
+
+User: Hongming Li
+Tasks: e-1, e-2, c-3
+
+User: Hao Mi
+Tasks: b-1, b-2
+
+User: Yunfei Wang
+Tasks:  c-1, c-2, c-4
+
+User: Chengyu Xin
+Tasks: a-1, a-2, c-1
+
+Other tasks or any added tasks: d-1 and more will be done together or separate during the process.
