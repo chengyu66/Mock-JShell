@@ -18,20 +18,23 @@ public class History extends Command{
 	
 	public void run(String [] input)
 	{
-	    if (input.length == 2 && input[1].matches(".*\\d+.*")) {
-	      for (int i = Integer.parseInt(input[1]);i<historyList.size(); i++)
+		int numbHistory = -1;
+		
+		if (input.length == 2 && input[1].matches(".*\\d+.*"))
+			numbHistory = Integer.parseInt(input[1]);
+		else if (input.length == 1)
+			numbHistory = 0;
+		
+		if (numbHistory >= 0){
+			for (int i = numbHistory;i<historyList.size(); i++)
 	        {
 	            System.out.println(historyList.get(i));
 	        }
-	    } else if(input.length == 1) {
-	      for (int i = 0;i<historyList.size(); i++)
-          {
-              System.out.println(historyList.get(i));
-          }
-	    } else {
-	      System.out.println(super.errorMessage());
-	      System.out.println(errorMessage());
-	    }
+		}
+		else{
+			System.out.println(super.errorMessage());
+		    System.out.println(errorMessage());
+		}
 	}
 	
 	public String errorMessage() {
