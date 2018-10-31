@@ -1,0 +1,13 @@
+What did I work on in the last three days?
+    - Complete the coding of Directory, file and History(the subclass of Command)
+    - Use the Directory and file class in FileSystem class.
+    - Help coding the trace method in FileSystem.
+    
+What do I plan to work in the next three days?
+    - Find a more efficient way to code the methods in History Class.
+    - Finish the comments for the classes I created.
+    - Start to code other subclasses of Command
+    
+
+Am I blocked on anything?
+    - find the way to compare file and directory in FileSystem.
