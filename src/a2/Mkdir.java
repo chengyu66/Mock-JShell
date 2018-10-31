@@ -8,12 +8,24 @@ public class Mkdir extends Command {
   
   public void run(String[] input) {
     if (isValid(input)) {
-      if (input[1].contains("/")) {
-        //
-      } else {
-        Directory newDirectory = new Directory(input[1],
-            fs.getCurrentDirectory());
-        (fs.getCurrentDirectory()).setSub(newDirectory);
+      Directory currDir = fs.getCurrentDirectory();
+      int index;
+      for (int i = 1; i < input.length; i++) {
+        // check if input is a path
+        if (input[i].contains("/")) {
+          
+        } else {
+          //
+          if (currDir.subExist(input[i])) {
+            System.out.println("File or Directory already exists");
+          } else {
+            Directory newDirectory = new Directory(input[i],
+                currDir);
+            currDir.setSub(newDirectory); 
+          }
+          index = (currDir).findSub(input[i]);
+          currDir = (Directory) currDir.getSub().get(index);
+        } 
       }
     } else {
       System.out.println(super.errorMessage());
@@ -23,13 +35,13 @@ public class Mkdir extends Command {
   
   public boolean isValid(String[] input) {
     boolean result = false;
-    if (input.length == 2) {
+    if (input.length != 1) {
       result = true;
     }
     return result;
   }
 
   public String errorMessage() {
-    return "correct format of Command mkdir: mkdir (DIR or PATH)";
+    return "correct format of Command mkdir: mkdir (DIRS or PATHS)";
   }
 }
