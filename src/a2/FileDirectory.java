@@ -3,10 +3,12 @@ package a2;
 public class FileDirectory {
 	private String name;
 	private FileDirectory parent;
+	
 
 	public FileDirectory(String name, FileDirectory parent){
 		this.name = name;
 		this.parent = parent;
+		
 	}
 	
 	public String getName(){
