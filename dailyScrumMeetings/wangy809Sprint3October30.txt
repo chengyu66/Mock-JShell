@@ -1,0 +1,16 @@
+What did I work on in the last three days?
+    - Working on codes of Jshell
+    	- Completed the base code for change directory
+    	- Completed the base code for print directory
+    	- Managed FileSystem,FileDirectory,Directory to fit cd/pwd
+
+
+What do I plan to work in the next three days?
+	- Working on Sprint3Backlog
+    - Working on codes of Jshell
+    	- Continue writing file class of Jshell with my team
+    	- Continue writing other classes to fit file class
+
+Am I blocked on anything?
+    - Another Midterm coming.
+    - trace method need to trace Files
