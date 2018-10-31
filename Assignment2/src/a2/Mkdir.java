@@ -8,6 +8,7 @@ public class Mkdir extends Command {
   
   public void run(String[] input) {
     if (isValid(input)) {
+      String output = "";
       Directory currDir = fs.getCurrentDirectory();
       int index;
       for (int i = 1; i < input.length; i++) {
@@ -17,7 +18,7 @@ public class Mkdir extends Command {
         } else {
           //
           if (currDir.subExist(input[i])) {
-            System.out.println("File or Directory already exists");
+            output = "Some Files or Directories already exist";
           } else {
             Directory newDirectory = new Directory(input[i],
                 currDir);
@@ -25,7 +26,10 @@ public class Mkdir extends Command {
           }
           index = (currDir).findSub(input[i]);
           currDir = (Directory) currDir.getSub().get(index);
-        } 
+        }
+      }
+      if(output != "") {
+        System.out.println(output);
       }
     } else {
       System.out.println(super.errorMessage());
