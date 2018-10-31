@@ -1,0 +1,10 @@
+What did I work on in the last three days?
+    - finish the coding of Command, Pwd, Mkdir done
+    - get most of the coding of JShell, Ls Class done
+    
+What do I plan to work in the next three days?
+    - help teammates to finish the trace method in FileSystem
+    - finish the Ls Class, and finalize the rest of the work for 2A
+
+Am I blocked on anything?
+    - need trace method in FileSystem to also work with File
