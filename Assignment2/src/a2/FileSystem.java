@@ -5,11 +5,13 @@ public class FileSystem {
 	private static FileSystem ref = null;
 	private Directory root;
 	private Directory currentDirectory;
+	private DirectoryStack directoryStack;
 	
 	// this constructor creates a filesystem instance
 	private FileSystem(String nameOfRoot) {
 		this.root = new Directory(nameOfRoot, null);
 		this.currentDirectory = root;
+		this.directoryStack = new DirectoryStack();
 		
 	}
 	
