@@ -15,6 +15,10 @@ public class Mkdir extends Command {
         // check if input is a path
         if (input[i].contains("/")) {
           
+          /*
+           * index = (currDir).findSub(input[i]);
+           * currDir = (Directory) currDir.getSub().get(index);
+           */
         } else {
           //
           if (currDir.subExist(input[i])) {
