@@ -42,7 +42,6 @@ public class JShell {
   // a dictionary that maps String as key to Command as value
   private Map<String, Command> map;
   private FileSystem fs;
-  private Command com;
   private PrintDirectory pwd;
   private Mkdir mkdir;
   private ChangeDirectory cd;
@@ -70,7 +69,6 @@ public class JShell {
     
     
     // creating command objects
-    com = new Command(fs);
     pwd = new PrintDirectory(fs);
     cd = new ChangeDirectory(fs);
     mkdir = new Mkdir(fs);
@@ -107,11 +105,11 @@ public class JShell {
     in.close();
   }
 
-  public void execute(String[] input) {
+  private void execute(String[] input) {
     // save the first word of user input
     String command = input[0];
     // check if the first word is a valid command
-    if (com.isValid(command)) {
+    if (isCommandValid(command)) {
       // if the command is exit
       if (command.equals("exit")) {
         // change the state of terminate to close JShell
@@ -130,5 +128,13 @@ public class JShell {
       // print the message
       System.out.println(input[0] + ": command not found");
     }
+  }
+  
+  private boolean isCommandValid(String command) {
+    boolean result = false;
+    if (map.keySet().contains(command)) {
+      result = true;
+    }
+    return result;
   }
 }
