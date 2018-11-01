@@ -41,6 +41,12 @@ public class Echo extends Command{
 				}
 			}
 			//Case 2.2: OutFile is a name
+			else{
+				currDirect = fs.getCurrentDirectory();
+				currFile = new File(fileName, currDirect);
+				currFile.setContent(input[1]);
+				currDirect.setSub(currFile);
+			}
 		}
 	}
 }
