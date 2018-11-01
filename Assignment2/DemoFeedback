@@ -1,0 +1,5 @@
+1. root is a /
+2. relative path .. for all
+3. simplify shell
+4. finder class; updatre trace
+5. Can't have two FileDirectory have the same name.
