@@ -35,5 +35,6 @@ public class DirectoryStack {
 		
 		return this.content.size() == 0;
 	}
-
+	
+	
 }
