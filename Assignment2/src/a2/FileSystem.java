@@ -17,7 +17,7 @@ public class FileSystem {
 	
 	public static FileSystem createInstanceOfFileSystem() {
 	  if(ref == null) {
-	    ref = new FileSystem("MyComputer");
+	    ref = new FileSystem("");
 	  }
 	  return ref;
 	}
