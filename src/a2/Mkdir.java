@@ -44,7 +44,8 @@ public class Mkdir extends Command {
               }
             }
           } else {
-            System.out.println("No such root directory");
+            System.out.println("Wrong root directory,"
+                + " try adding \\\"/\\\" in front of the path");
           }
         } else {
           //
