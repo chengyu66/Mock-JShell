@@ -16,7 +16,7 @@ public class Echo extends Command{
 		if (input.length == 2)
 			System.out.println(input[1]);
 		//Case 2: String and OutFile in input
-		else if (input.length == 4){
+		else if (input.length == 4 && (input[2].equals(">")||input[2].equals(">"))){
 			fileName = input[3].split("/")[input[3].split("/").length-1];
 			//Case 2.1£º OutFile is a path
 			if (input[3].contains("/")){
