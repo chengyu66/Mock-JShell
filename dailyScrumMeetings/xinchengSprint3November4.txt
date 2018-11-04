@@ -1,0 +1,10 @@
+What did I work on in the last three days?
+    - finish trace method in FileSystem
+    - debug the program
+    
+What do I plan to work in the next three days?
+    - fix the misunderstanding concept of path relative to current directory
+    - rewrite some methods involve this problem
+
+Am I blocked on anything?
+    - need some time to review 2 upcomming midterms
