@@ -48,6 +48,7 @@ public class JShell {
   private History history;
   private Ls ls;
   private Echo echo;
+  private Cat cat;
 
   // constructor
   JShell() {
@@ -76,6 +77,7 @@ public class JShell {
     ls = new Ls(fs);
     history = new History(fs);
     echo = new Echo(fs);
+    cat = new Cat(fs);
     // create the dictionary that maps String as key to Command as value
     map = new HashMap<String, Command>();
     // put corresponding Command by String
@@ -85,6 +87,7 @@ public class JShell {
     map.put("ls", ls);
     map.put("history", history);
     map.put("echo", echo);
+    map.put("cat", cat);
   }
 
   // main class of JShell
