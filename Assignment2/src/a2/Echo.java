@@ -7,6 +7,14 @@ public class Echo extends Command{
 		super(fs);
 	}
 	
+	public File setOraddContent(File file, String content, String input){
+		if (input.equals(">"))
+			file.setContent(content);
+		else
+			file.addContent(content);
+		
+		return file;
+	}
 	public void run(String [] input){
 		File currFile = null;
 		Directory currDirect = null;
@@ -16,7 +24,7 @@ public class Echo extends Command{
 		if (input.length == 2)
 			System.out.println(input[1]);
 		//Case 2: String and OutFile in input
-		else if (input.length == 4 && (input[2].equals(">")||input[2].equals(">"))){
+		else if (input.length == 4 && (input[2].equals(">")||input[2].equals(">>"))){
 			fileName = input[3].split("/")[input[3].split("/").length-1];
 			//Case 2.1£º OutFile is a path
 			if (input[3].contains("/")){
@@ -31,20 +39,20 @@ public class Echo extends Command{
 					//Case 2.1.1.2: the directory holds the file exists in OutFile
 					else{
 						currFile = new File(fileName, currDirect);
-						currFile.setContent(input[1]);
+						currFile = setOraddContent(currFile, input[1], input[2]);
 						currDirect.setSub(currFile);
 					}
 				}
 				//Case 2.1.2: file exit in OutFile
 				else{
-					currFile.setContent(input[1]);
+					currFile = setOraddContent(currFile, input[1], input[2]);
 				}
 			}
 			//Case 2.2: OutFile is a name
 			else{
 				currDirect = fs.getCurrentDirectory();
 				currFile = new File(fileName, currDirect);
-				currFile.setContent(input[1]);
+				currFile = setOraddContent(currFile, input[1], input[2]);
 				currDirect.setSub(currFile);
 			}
 		}
