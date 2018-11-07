@@ -68,7 +68,9 @@ public class FileSystem {
             else if (folderName.equals(root.getName())){
                 curr = root;
             }else if (folderName.equals("..")) {
+              if (curr != root) {
                 curr = curr.getParent();
+              }
             }else if (folderName.equals(".")) {
                 // do nothing
             }else {
