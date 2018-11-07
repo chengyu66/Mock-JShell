@@ -12,12 +12,12 @@ public class Cat extends Command{
         FileDirectory fd = fs.trace(input[i]);
         if (fd instanceof File) {
           File f = (File)fd;
-          System.out.print(f.getContent());
+          System.out.println(f.getContent() +"\n\n\n");
         }else {
           System.out.println("cat: /"+input[i]+" "+errorMessage());
         }
       }else {
-        System.out.println(errorMessage());
+        System.out.println("cat: /"+input[i]+" "+errorMessage());
       }
     }
   }
