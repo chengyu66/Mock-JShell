@@ -15,37 +15,34 @@ public class Mkdir extends Command {
         if (input[i].contains("/")) {
           String[] directories = input[i].split("/");
           Directory dir = fs.getRoot();
-          // if the input path starts from the root of filesystem
-          if (dir.getName().equals(directories[0])) {
-            int index;
-            for (int j = 1; j < directories.length; j++) {
-              index = dir.findSub(directories[j]);
-              if (j == directories.length - 1) {
-                if (index != -1){
-                  System.out.println("File or directory already exists");
-                }else {
-                  Directory newDirectory = new Directory(directories[j],
-                      dir);
-                  dir.setSub(newDirectory); 
+          int index;
+          if (directories.length == 0) {
+            System.out.println("Invalid path");
+          }
+          for (int j = 1; j < directories.length; j++) {
+            index = dir.findSub(directories[j]);
+            if (j == directories.length - 1) {
+              if (index != -1){
+                System.out.println("File or directory already exists");
+              }else {
+                Directory newDirectory = new Directory(directories[j],
+                    dir);
+                dir.setSub(newDirectory); 
+              }
+            } else {
+              // if there is such directory exists
+              if (index != -1) {
+                try {
+                  dir = (Directory) dir.getSub().get(index);
+                } catch (java.lang.ClassCastException e) {
+                  System.out.println("File is not a directory");
+                  break;
                 }
               } else {
-                // if there is such directory exists
-                if (index != -1) {
-                  try {
-                    dir = (Directory) dir.getSub().get(index);
-                  } catch (java.lang.ClassCastException e) {
-                    System.out.println("File is not a directory");
-                    break;
-                  }
-                } else {
-                  System.out.println("No such file or directory");
-                  break;
-                } 
-              }
+                System.out.println("No such file or directory");
+                break;
+              } 
             }
-          } else {
-            System.out.println("Wrong root directory,"
-                + " try adding \"/\" in front of the path");
           }
         } else {
           //
