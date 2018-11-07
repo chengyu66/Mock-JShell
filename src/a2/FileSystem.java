@@ -49,20 +49,15 @@ public class FileSystem {
 	// need to consider the case of File.
 	public FileDirectory trace(String path) {
 		// Decompose the string <path> into the name of each folder
+	    FileDirectory curr;
 	    if (path.startsWith("/")) {
-	      path = path.substring(1);
-	    }
+	      curr = root;
+        }else {
+          curr = currentDirectory;
+        }
 		String[] folders = path.split("/");
 		// The directory currently getting examined
-		FileDirectory curr;
-		if (folders[0].equals(root.getName())) {
-		  curr=root;
-		}else if (currentDirectory.findSub(folders[0])!=-1) {
-		  curr=currentDirectory;
-	    }else {
-	      return null;
-	    }
-    // loop through the folders
+        // loop through the folders
 		for (String folderName: folders){
 		  if (curr instanceof Directory) {
 		    int index = ((Directory) curr).findSub(folderName);
@@ -72,6 +67,10 @@ public class FileSystem {
             }
             else if (folderName.equals(root.getName())){
                 curr = root;
+            }else if (folderName.equals("..")) {
+                curr = curr.getParent();
+            }else if (folderName.equals(".")) {
+                // do nothing
             }else {
                 return null;
             }
