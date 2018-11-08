@@ -3,14 +3,8 @@ package a2;
 import java.util.ArrayList;
 
 /**
- * Determines how similar each pair of users is based on their ratings. This
- * similarity value is represented with with a float value between 0 and 1,
- * where 1 is perfect/identical similarity. Stores these values in the
- * userUserMatrix.
+ * This class stores directories in LIFO behavior
  * 
- * @param items1 is the column of the first user.
- * @param items2 is the column of the second user.
- * @return return a double represents the distance between users.
  */
 public class DirectoryStack {
 	
@@ -19,16 +13,30 @@ public class DirectoryStack {
 		this.content = new ArrayList<Directory>();
 
 	}
+	/**
+	 * Pushes directory to the top of the Directory stack.
+	 * 
+	 * @param Directory 
+	 */
 	
 	public void push(Directory dir) {
 		this.content.add(dir);
 		
 		
 	}
+
+	/**
+	 * Pushes directory to the top of the Directory stack.
+	 * 
+	 * @return The directory on top of the Directory Stack
+	 */
 	
 	public Directory pop() {
+		// get the size of the Directory stack
 		int size = this.content.size();
+		// if not empty
 		if (!(this.isEmpty())) {
+			// get the directory on top
 			Directory result = this.content.get(size - 1);
 			this.content.remove(size - 1);
 			return result;
@@ -39,7 +47,11 @@ public class DirectoryStack {
 		
 	}
 	
-	
+	/**
+	 * Checks whether the function is empty
+	 * 
+	 * @return boolean whether the DirectoryStack is empty.
+	 */
 	public boolean isEmpty() {
 		
 		return this.content.size() == 0;
