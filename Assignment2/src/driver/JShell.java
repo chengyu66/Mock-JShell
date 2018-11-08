@@ -16,9 +16,9 @@
 // Author: Yunfei Wang
 //
 // Student4:
-// UTORID user_name:
-// UT Student #:
-// Author:
+// UTORID user_name: lihongm2
+// UT Student #: 1004135624
+// Author: Hongming Li
 //
 //
 // Honor Code: I pledge that this program represents my own
@@ -72,8 +72,8 @@ public class JShell {
     File music = new File("Music.txt", c);
     c.setSub(music);
     music.setContent("DreamTeam");
-    
-    
+
+
     // creating command objects
     pwd = new Pwd(fs);
     cd = new ChangeDirectory(fs);
@@ -130,14 +130,14 @@ public class JShell {
       if (command.equals("exit")) {
         // change the state of terminate to close JShell
         terminate = true;
-      // else execute the command
+        // else execute the command
       } else {
         // save the command in history
         history.addHistory(input);
         // execute the corresponding command by user input
         (map.get(input[0])).run(input);
       }
-    // else it is not a valid command
+      // else it is not a valid command
     } else {
       // save the input in history
       history.addHistory(input);
@@ -145,7 +145,7 @@ public class JShell {
       System.out.println(input[0] + ": command not found");
     }
   }
-  
+
   private boolean isCommandValid(String command) {
     boolean result = false;
     if (map.keySet().contains(command)) {
