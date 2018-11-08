@@ -1,13 +1,8 @@
 package a2;
 /**
- * Determines how similar each pair of users is based on their ratings. This
- * similarity value is represented with with a float value between 0 and 1,
- * where 1 is perfect/identical similarity. Stores these values in the
- * userUserMatrix.
- * 
- * @param items1 is the column of the first user.
- * @param items2 is the column of the second user.
- * @return return a double represents the distance between users.
+ * The class has the ability to use the File and Directory
+ * Class to trace the path and set and get the current Directory
+ * for the relative path.
  */
 public class FileSystem {
   
@@ -16,6 +11,13 @@ public class FileSystem {
 	private Directory currentDirectory;
 	private DirectoryStack directoryStack;
 	
+	/**
+	   * The constructor of FileSystem
+	   * initialize the root currentDirectory and directoryStack
+	   * 
+	   * @param input a String array of user input without space
+	   * @return return None
+	   */
 	// this constructor creates a filesystem instance
 	private FileSystem(String nameOfRoot) {
 		this.root = new Directory(nameOfRoot, null);
@@ -24,6 +26,12 @@ public class FileSystem {
 		
 	}
 	
+	/**
+	   * Create a instance FileSystem
+	   * 
+	   * @param None
+	   * @return return a instance FileSystem
+	   */
 	public static FileSystem createInstanceOfFileSystem() {
 	  if(ref == null) {
 	    ref = new FileSystem("");
@@ -31,20 +39,44 @@ public class FileSystem {
 	  return ref;
 	}
 	
+	/**
+	   * It has the ability to set the current Directory
+	   * the current Directory is relate to the relative path.
+	   * 
+	   * @param input a String array of user input without space
+	   * @return return None
+	   */
 	public void setCurrentDirectory(Directory newDirectory) {
 		this.currentDirectory = newDirectory;
 		
 	}
 	
+	/**
+	   * output the current Directory
+	   * 	   * 
+	   * @param None
+	   * @return return current Directory.
+	   */
 	public Directory getCurrentDirectory() {
 		return this.currentDirectory;
 	}
 	
-	
+	/**
+	   * get the directory Stack
+	   *
+	   * @param None
+	   * @return return directory stack
+	   */
 	public DirectoryStack getDirectoryStack() {
 		return directoryStack;
 	}
 
+	/**
+	   * Set the Directory Stack
+	   * 	   * 
+	   * @param Direactory Stack
+	   * @return return None.
+	   */
 	public void setDirectoryStack(DirectoryStack directoryStack) {
 		this.directoryStack = directoryStack;
 	}
@@ -53,9 +85,13 @@ public class FileSystem {
 		return this.root;
 	}
 	
-	// this method is additional.
-	// you pass in a path, FileSystem get to that directory
-	// need to consider the case of File.
+	/**
+	   * you pass in a path, FileSystem get to that directory
+	   * need to consider the case of File.
+	   * 
+	   * @param path the string variable represent.
+	   * @return return the directory or the file in that path
+	   */
 	public FileDirectory trace(String path) {
 		// Decompose the string <path> into the name of each folder
 	    FileDirectory curr;
