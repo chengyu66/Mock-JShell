@@ -1,13 +1,9 @@
 package a2;
 /**
- * Determines how similar each pair of users is based on their ratings. This
- * similarity value is represented with with a float value between 0 and 1,
- * where 1 is perfect/identical similarity. Stores these values in the
- * userUserMatrix.
+ * Construct Change Directory class, which is a command.
  * 
- * @param items1 is the column of the first user.
- * @param items2 is the column of the second user.
- * @return return a double represents the distance between users.
+ * @param fs is a fileSystem
+ * @return return None.
  */
 import a2.FileSystem;
 
@@ -17,13 +13,24 @@ public class ChangeDirectory extends Command{
     super(fs);
     
   }
+  /**
+   * Run method return None by given Split string input and 
+   * change current directory by given path
+   * 
+   * @param input is a string input list split by "/"
+   * @return return None.
+   */
   public void run(String[] input) {
+    // tell if the input list is valid length
     if (this.isValid(input)) {
       String path = input[1];
       FileDirectory fd = fs.trace(path);
+      // tell if the FileDirectory found by path is a file
       if (fd instanceof File) {
         System.out.println("Not a directory");
       } else if (fd instanceof Directory) {
+        //if the FileDirectory found by path is a Directory
+        //set current directory to the FileDirectory found
         fs.setCurrentDirectory((Directory)fd);
       } else {
         System.out.println(errorMessage());
@@ -32,11 +39,14 @@ public class ChangeDirectory extends Command{
       System.out.println(super.errorMessage());
     }
   }
+  
   public String errorMessage() {
     return "No such file or directory";
   }
+  
   public boolean isValid(String[] input) {
     boolean result = false;
+    // tell if the length if valid
     if (input.length>=2) {
       result = true;
     }else {
