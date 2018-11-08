@@ -1,7 +1,7 @@
 package a2;
+
 /**
- * PrintDirectory class is a command that used to run pwd
- * command.
+ * PrintDirectory class is a command that used to run pwd command.
  * 
  * @param fs is a filesystem that has been constructed
  * @return return none
@@ -11,6 +11,7 @@ public class Pwd extends Command {
   public Pwd(FileSystem fs) {
     super(fs);
   }
+
   /**
    * run method return none and print the current full path
    * 
