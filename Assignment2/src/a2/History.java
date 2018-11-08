@@ -1,30 +1,45 @@
 package a2;
-/**
- * Determines how similar each pair of users is based on their ratings. This
- * similarity value is represented with with a float value between 0 and 1,
- * where 1 is perfect/identical similarity. Stores these values in the
- * userUserMatrix.
- * 
- * @param items1 is the column of the first user.
- * @param items2 is the column of the second user.
- * @return return a double represents the distance between users.
- */
+
 import java.util.ArrayList;
 
+/**
+ * The class collects the recent command in Jshell
+ * and print the history.
+ */
 public class History extends Command{
 	private ArrayList<String> historyList;
 
+	/**
+	   * the constructor of History
+	   * initialize the historyList.
+	   * 
+	   * @param input a String array of user input without space
+	   * @return return None
+	   */
 	public History(FileSystem fs)
 	{
 		super(fs);
 		historyList = new ArrayList<String>();
 	}
 	
+	/**
+	   * add a new history in the class
+	   * 
+	   * @param input a String array of hisotry without space
+	   * @return return None
+	   */
 	public void addHistory(String [] newHistory)
 	{
 		historyList.add((historyList.size()+1)+ ". " + String.join(" ", newHistory));
 	}
 	
+	/**
+	   * Run the command and output the recent history 
+	   * by the giving path
+	   * 
+	   * @param input a String array of user input without space
+	   * @return return None
+	   */
 	public void run(String [] input)
 	{
 		int numbHistory = -1;
