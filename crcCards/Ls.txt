@@ -1,9 +1,9 @@
 Class name: Ls
-Parent class (if any): ProecessManagement
+Parent class (if any): Command
+Subclasses (if any):
 
 Responsibilities:
 * Print all the name of files and directory in the current directory in the shell.
 
 Collaborators:
-*OperatingSystem
-*Shell
+* FileSystem

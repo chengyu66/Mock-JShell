@@ -1,4 +1,6 @@
 Class name: Pushd
+Parent class (if any):Command
+Subclasses (if any):
 
 Responsibilities:
 * Save the current directory by pushing onto DirectoryStack
@@ -6,3 +8,4 @@ Responsibilities:
 
 Collaborators:
 * DirectoryStack
+* FileSystem

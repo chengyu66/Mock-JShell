@@ -1,0 +1,9 @@
+Class name: Command
+Parent class (if any):
+Subclasses (if any): Pwd,Mkdir,ChangeDirector,History,Ls,Echo,Cat,Pushd,Popd,Man
+
+Responsibilities:
+* Viable commands that Operative system is able to execute
+Collaborators:
+* Jshell
+* FileSystem

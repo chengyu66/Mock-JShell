@@ -1,9 +1,9 @@
 Class name: Pwd
-Parent class (if any): ProcessManagement 
+Parent class (if any):Command
+Subclasses (if any):
 
 Responsibilities:
 * Print the current working directory
 
 Collaborators:
-* OperatingSystem
-* Directory
+* FileSystem

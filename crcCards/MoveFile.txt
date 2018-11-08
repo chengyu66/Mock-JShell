@@ -1,8 +1,0 @@
-Class name: MoveFile
-Parent class (if any): FileManagement
-Subclasses (if any): 
-
-Responsibilities:
-* Move the file to another directory.
-Collaborators:
-* OperatingSystem

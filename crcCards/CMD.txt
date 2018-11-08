@@ -1,8 +1,0 @@
-Class name: PrintDoucumention(man CMD)
-Parent class (if any): ProcessManagement 
-
-Responsibilities:
-* Print the doucumention of CMD
-
-Collaborators:
-* OperatingSystem
