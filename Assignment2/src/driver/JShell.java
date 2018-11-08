@@ -42,7 +42,7 @@ public class JShell {
   // a dictionary that maps String as key to Command as value
   private Map<String, Command> map;
   private FileSystem fs;
-  private PrintDirectory pwd;
+  private Pwd pwd;
   private Mkdir mkdir;
   private ChangeDirectory cd;
   private History history;
@@ -74,7 +74,7 @@ public class JShell {
     
     
     // creating command objects
-    pwd = new PrintDirectory(fs);
+    pwd = new Pwd(fs);
     cd = new ChangeDirectory(fs);
     mkdir = new Mkdir(fs);
     ls = new Ls(fs);
