@@ -1,24 +1,26 @@
 package a2;
 import a2.FileSystem;
 /**
- * Determines how similar each pair of users is based on their ratings. This
- * similarity value is represented with with a float value between 0 and 1,
- * where 1 is perfect/identical similarity. Stores these values in the
- * userUserMatrix.
- * 
- * @param items1 is the column of the first user.
- * @param items2 is the column of the second user.
- * @return return a double represents the distance between users.
+ * Construct cat class which is a command
+ * @param fs is a FileSystem.
  */
 public class Cat extends Command{
 
   public Cat(FileSystem fs) {
     super(fs);
   }
+  /**
+   * Print the file content by given the path to the file.
+   * @param fs is a FileSystem.
+   * @return return None.
+   */
   public void run(String[] input) {
+    //loop through the second column to the end
     for (int i=1;i<input.length;i++) {
+      //tell if each path is valid
       if (this.isValid(input[i])) {
         FileDirectory fd = fs.trace(input[i]);
+        //if the FileDirectory found is a file 
         if (fd instanceof File) {
           File f = (File)fd;
           System.out.println(f.getContent() +"\n\n\n");
@@ -30,14 +32,21 @@ public class Cat extends Command{
       }
     }
   }
-  
+
   public String errorMessage() {
     return "No such file or directory";
   }
-  
+  /**
+   * Return true or false to tell if the path string is valid.
+   * 
+   * @param path is the input string.
+   * @return return true or false.
+   */
   public boolean isValid(String path) {
     boolean result = false;
-    if (path.length()>=2) {
+    String[] folder = path.split("/");
+    // split path to tell if is valid length
+    if (folder.length>=2) {
       result = true;
     }else {
       result = false;
