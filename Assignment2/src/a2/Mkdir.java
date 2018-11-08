@@ -8,55 +8,52 @@ public class Mkdir extends Command {
   
   public void run(String[] input) {
     if (isValid(input)) {
-      String output = "";
       Directory currDir = fs.getCurrentDirectory();
       for (int i = 1; i < input.length; i++) {
+        String output = "";
         // check if input is a path
         if (input[i].contains("/")) {
-          String[] directories = input[i].split("/");
-          Directory dir = fs.getRoot();
-          int index;
-          if (directories.length == 0) {
-            System.out.println("Invalid path");
-          }
-          for (int j = 1; j < directories.length; j++) {
-            index = dir.findSub(directories[j]);
-            if (j == directories.length - 1) {
-              if (index != -1){
-                System.out.println("File or directory already exists");
-              }else {
-                Directory newDirectory = new Directory(directories[j],
-                    dir);
-                dir.setSub(newDirectory); 
-              }
-            } else {
-              // if there is such directory exists
-              if (index != -1) {
-                try {
-                  dir = (Directory) dir.getSub().get(index);
-                } catch (java.lang.ClassCastException e) {
-                  System.out.println("File is not a directory");
-                  break;
-                }
+          int indexOfLastSlash = input[i].lastIndexOf("/");
+          String partialPath = input[i].substring(0, indexOfLastSlash);
+          String newDirectoryName = input[i].substring(indexOfLastSlash + 1);
+          FileDirectory secondLastDir = fs.trace(partialPath);
+          if (secondLastDir != null) {
+            // check if the partial path is a directory
+            if(secondLastDir instanceof Directory) {
+              if(((Directory) secondLastDir).subExist(newDirectoryName)) {
+                output = "Argument"+ i + ": File or directory with the same"
+                    + " name already exists";
+              } else if(!validName(newDirectoryName)) {
+                output = "Argument"+ i + ": Invalid name with"
+                    + " special character";
               } else {
-                System.out.println("No such file or directory");
-                break;
-              } 
+                Directory newDirectory = new Directory(newDirectoryName,
+                    (Directory)secondLastDir);
+                ((Directory)secondLastDir).setSub(newDirectory);
+              }
+            // else it is a file
+            } else {
+              output = "Argument"+ i + ": Cannot make new directoy in a File";
             }
+          }else {
+            output = "Argument"+ i + ": No such directory to add new directory";
           }
         } else {
           //
           if (currDir.subExist(input[i])) {
-            output = "Some Files or Directories already exist";
+            output = "Argument"+ i + ": Some Files or Directories"
+                + " already exist";
+          } else if(!validName(input[i])) {
+            output = "Argument"+ i + ": Invalid name with special character";
           } else {
             Directory newDirectory = new Directory(input[i],
                 currDir);
             currDir.setSub(newDirectory);
           }
         }
-      }
       if(output != "") {
         System.out.println(output);
+      }
       }
     } else {
       System.out.println(super.errorMessage());
