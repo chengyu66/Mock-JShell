@@ -12,7 +12,13 @@ public class Popd extends Command{
 	public Popd(FileSystem fs) {
 		super(fs);
 	}
-	
+	/**
+	 * This class gets the user to the most recent directory from 
+	 * the DirectoryStack. And changes the directory to that the top entry. 
+	 * 
+	 * @param fs which is a FileSystem
+	 * @return null
+	 */
 	public void run(String[] input) {
 		
 		// There is at least one Directory in the DirectoryStack
