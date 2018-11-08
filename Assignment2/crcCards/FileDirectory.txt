@@ -1,0 +1,10 @@
+Class name: DirectoryStack
+Parent class (if any):
+Subclasses (if any):File, Directory 
+
+Responsibilities:
+* Create arrayList that contain both File and Directory(Polymorphism)
+
+Collaborators:
+* Pushd
+* Popd
