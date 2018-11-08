@@ -1,0 +1,11 @@
+Class name: ChangeDirectory
+Parent class (if any):Command
+Subclasses (if any):
+
+Responsibilities:
+* Change the current directory to a given directory
+
+Collaborators:
+* Pushd
+* FileSystem
+* popd
