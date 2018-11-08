@@ -16,7 +16,7 @@ public class Documentation{
     // set new hashtable
     this.map = new HashMap<String, String>();
     // map all command strings to its documentation
-    map.put("exit", "Input format: exit \n quit the program")
+    map.put("exit", "Input format: exit \n quit the program");
     map.put("pwd", "Input format: pwd \n Print the current directory");
     map.put("mkdir", "Input format: mkdir <DIR...> \n Create a new directories,"
             + " each of which may be relative to current directory or may be "
