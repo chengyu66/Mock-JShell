@@ -5,7 +5,7 @@
 // UT Student #:1004068518
 // Author:Chengyu Xin
 //
-// Student2: 
+// Student2:
 // UTORID user_name: mihao
 // UT Student #: 1004418203
 // Author: Hao Mi
