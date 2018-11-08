@@ -16,6 +16,12 @@ public class Test {
 		Directory item5 = new Directory("item5", item4);
 		File file1 = new File("file1",item5);
 		
+		item1.setSub(item2);
+		item2.setSub(item3);
+		item3.setSub(item4);
+		item4.setSub(item5);
+		item5.setSub(file1);
+		
 		if (number == 1)
 			return item1;
 		if (number == 2)
@@ -32,6 +38,7 @@ public class Test {
 			return null;
 			
 	}
+
 	public static void testFile(){
 		String actual, expect;
 		File file = new File("hello", null);
@@ -46,7 +53,21 @@ public class Test {
 		System.out.println("Check the content in the file: "+ actual.equals(expect));
 	}
 	
+	public static void testDirectory(){
+		String actual, expect;
+		Directory item2 = (Directory)getItem(2);
+		
+		actual = item2.toString();
+		expect = "item1/item2";
+		System.out.println("Check the path of directory: "+ actual.equals(expect));
+		
+		actual = item2.getSub().get(0).toString();
+		expect = "item1/item2/item3";
+		System.out.println("Check the path of sub directory: "+ actual.equals(expect));
+	}
+	
 	public static void main(String [] args){
 		testFile();
+		testDirectory();
 	}
 }
