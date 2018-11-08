@@ -1,8 +1,0 @@
-Class name: RenameFile
-Parent class (if any): FileManagement
-Subclasses (if any): 
-
-Responsibilities:
-* Change the name of the file
-Collaborators:
-* OperatingSystem

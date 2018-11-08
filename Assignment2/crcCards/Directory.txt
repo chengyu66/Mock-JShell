@@ -1,4 +1,6 @@
 Class name: Directory
+Parent class (if any):FileDirectory
+Subclasses (if any):
 
 Responsibilities:
 * Point path to memory

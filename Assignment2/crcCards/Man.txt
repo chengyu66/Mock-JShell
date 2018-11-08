@@ -1,9 +1,10 @@
-Class name: Cat
+Class name: Man
 Parent class (if any): Command
 Subclasses (if any):
 
 Responsibilities:
-Displays the contents of File and other Files concatenated in the shell.
+* Print the documentation of the input command
 
 Collaborators:
+* Documentation
 * FileSystem

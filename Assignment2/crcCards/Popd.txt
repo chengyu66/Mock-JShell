@@ -1,4 +1,6 @@
 Class name: Popd
+Parent class (if any):Command
+Subclasses (if any):
 
 Responsibilities:
 * Remove the top entry from the directory stack
@@ -6,3 +8,4 @@ Responsibilities:
 
 Collaborators:
 * DirectoryStack
+* FileSystem

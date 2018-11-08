@@ -1,4 +1,6 @@
 Class name: History
+Parent class (if any):Command
+Subclasses (if any):
 
 Responsibilities:
 Prints out the recent command. The output should have two columns.
@@ -8,3 +10,4 @@ The second column contains the actual command.
 
 Collaborators:
 * DirectoryStack
+* FileSystem

@@ -1,7 +1,12 @@
 Class name: FileSystem
+Parent class (if any):
+Subclasses (if any):
 
 Responsibilities:
 * Store data in file with directory
 
 Collaborators:
 * Directory
+* File
+* FileDirectory
+* DirectoryStack

@@ -1,8 +1,0 @@
-Class name: MakeNewDirectory(mkdir DIR)
-Parent class (if any): FileManagement
-Subclasses (if any):
-
-Responsibilities:
-* Create a new directory
-Collaborators:
-* OperatingSystem
