@@ -1,0 +1,5 @@
+What did I work on in the last three days?
+    - debugging
+    - write man and cat class
+    - fix comment and documentations
+    - fix CRC cards
