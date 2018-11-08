@@ -17,7 +17,7 @@ public class Documentation{
   private Map<String, String> map;
   public Documentation(){
     this.map = new HashMap<String, String>();
-    map.put("exit", "Input format: exit \n quit the program")
+    map.put("exit", "Input format: exit \n quit the program");
     map.put("pwd", "Input format: pwd \n Print the current directory");
     map.put("mkdir", "Input format: mkdir <DIR...> \n Create a new directories,"
     		+ " each of which may be relative to current directory or may be "
