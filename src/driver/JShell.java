@@ -34,7 +34,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 import a2.*;
-
+/**
+ * JShell class is a main class to be constructed
+ * with other Collaborators.
+ * 
+ * @param fs is a filesystem that has been constructed
+ * @param map is a hashmap map command strings to command class
+ * @return return none
+ */
 public class JShell {
 
   // a boolean variable to control the status of JShell
@@ -53,7 +60,25 @@ public class JShell {
   private Popd popd;
   private Man man;
 
-
+  /**
+   * construct JShell class with hashmap of commands and 
+   * the constructed filesystem.
+   * 
+   * @param fs is a filesystem that has been constructed
+   * @param map is a hashmap map command strings to command class
+   * @param pwd is a command to print directory
+   * @param mkdir is a command to create a new directory
+   * @param history is a command to get history
+   * @param cd is a command to change directory
+   * @param ls is a command to list all files and folders 
+   * under current directory
+   * @param echo is a command to managed files and file contents
+   * @param cat is a command to get the file contents
+   * @param pushd is a command to push directory
+   * @param popd is a command to pop directory
+   * @param man is a command to get documentations
+   * @return return none
+   */
   // constructor
   JShell() {
     // JShell will be closed when terminate is true
@@ -133,9 +158,16 @@ public class JShell {
       System.out.println(input[0] + ": command not found");
     }
   }
-
+  /**
+   * tell if the command is a valid string in all commands
+   * or the command to exit
+   * 
+   * @param command is a command string
+   * @return return true/false
+   */
   private boolean isCommandValid(String command) {
     boolean result = false;
+    //tell if the map key contains this string or is it exit
     if (map.keySet().contains(command) || command.equals("exit")) {
       result = true;
     }
