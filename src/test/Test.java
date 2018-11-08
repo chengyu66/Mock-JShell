@@ -64,6 +64,10 @@ public class Test {
 		actual = item2.getSub().get(0).toString();
 		expect = "item1/item2/item3";
 		System.out.println("Check the path of sub directory: "+ actual.equals(expect));
+		
+		actual = item2.getParent().toString();
+		expect = "item1";
+		System.out.println("Check the path of parent directory: "+ actual.equals(expect));
 	}
 	
 	public static void main(String [] args){
