@@ -3,7 +3,7 @@ package test;
 import a2.*;
 
 public class Test {
-	private FileSystem fs;
+	private static FileSystem fs;
 	Test(){
 		fs = FileSystem.createInstanceOfFileSystem();
 	}
@@ -69,7 +69,7 @@ public class Test {
 		expect = "item1";
 		System.out.println("Check the path of parent directory: "+ actual.equals(expect));
 	}
-	
+
 	public static void main(String [] args){
 		testFile();
 		testDirectory();
