@@ -1,21 +1,30 @@
 package a2;
 
 /**
- * Determines how similar each pair of users is based on their ratings. This
- * similarity value is represented with with a float value between 0 and 1,
- * where 1 is perfect/identical similarity. Stores these values in the
- * userUserMatrix.
- * 
- * @param items1 is the column of the first user.
- * @param items2 is the column of the second user.
- * @return return a double represents the distance between users.
+ * the Class Echo represent the command of "echo" in Jshell
+ * It has the ability to add or rewrite the file by the giving path
  */
 public class Echo extends Command{
+	/**
+	   * the construction of echo
+	   * 
+	   * @param FileSystem the file system in Jshell
+	   * @return None
+	   */
 	public Echo(FileSystem fs)
 	{
 		super(fs);
 	}
 	
+	/**
+	   * Choose to add or rewrite the content by the given
+	   * file and command
+	   * 
+	   * @param file The giving file
+	   * @param content the content need to add or rewrite
+	   * @param input the String variable to add or rewrite the content.
+	   * @return None
+	   */
 	public File setOraddContent(File file, String content, String input){
 		content = content.substring(1, content.length()-1);
 		if (input.equals(">"))
@@ -26,6 +35,12 @@ public class Echo extends Command{
 		return file;
 	}
 	
+	/**
+	   * check the user input is correct.
+	   * 
+	   * @param input the String array of user input with no whitespace
+	   * @return the input is correct or not
+	   */
 	public boolean correctForm(String [] input){
 		boolean correct = true;
 
@@ -40,7 +55,15 @@ public class Echo extends Command{
 		
 		return correct;
 	}
-
+	
+	/**
+	   * add the file and rewrite or add the content
+	   * of the giving input. Raising error message if
+	   * the user input is not correct.
+	   * 
+	   * @param the String content
+	   * @return None
+	   */
 	public void run(String [] input){
 		File currFile = null;
 		Directory currDirect = null;
