@@ -4,8 +4,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public abstract class Command {
-  
+
   public static FileSystem fs;
+
   /**
    * Construct a command class with filesystem
    * 
@@ -18,6 +19,7 @@ public abstract class Command {
 
   // Every subClass should override this method
   public void run(String[] input) {}
+
   /**
    * tell if the command name has symbol that non-valid
    * 
@@ -31,7 +33,7 @@ public abstract class Command {
     boolean result = m.find();
     return !result;
   }
-  
+
   public String errorMessage() {
     return "Wrong Input Format";
   }

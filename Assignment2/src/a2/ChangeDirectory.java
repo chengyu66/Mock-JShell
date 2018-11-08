@@ -1,4 +1,5 @@
 package a2;
+
 /**
  * Construct Change Directory class, which is a command.
  * 
@@ -7,15 +8,16 @@ package a2;
  */
 import a2.FileSystem;
 
-public class ChangeDirectory extends Command{
+public class ChangeDirectory extends Command {
 
   public ChangeDirectory(FileSystem fs) {
     super(fs);
-    
+
   }
+
   /**
-   * Run method return None by given Split string input and 
-   * change current directory by given path
+   * Run method return None by given Split string input and change current
+   * directory by given path
    * 
    * @param input is a string input list split by "/"
    * @return return None.
@@ -29,27 +31,27 @@ public class ChangeDirectory extends Command{
       if (fd instanceof File) {
         System.out.println("Not a directory");
       } else if (fd instanceof Directory) {
-        //if the FileDirectory found by path is a Directory
-        //set current directory to the FileDirectory found
-        fs.setCurrentDirectory((Directory)fd);
+        // if the FileDirectory found by path is a Directory
+        // set current directory to the FileDirectory found
+        fs.setCurrentDirectory((Directory) fd);
       } else {
         System.out.println(errorMessage());
       }
-    }else {
+    } else {
       System.out.println(super.errorMessage());
     }
   }
-  
+
   public String errorMessage() {
     return "No such file or directory";
   }
-  
+
   public boolean isValid(String[] input) {
     boolean result = false;
     // tell if the length if valid
-    if (input.length>=2) {
+    if (input.length >= 2) {
       result = true;
-    }else {
+    } else {
       result = false;
     }
     return result;
