@@ -1,4 +1,5 @@
 package a2;
+
 /**
  * Make directory class is a command that constructed by FileSystem
  * 
@@ -6,13 +7,14 @@ package a2;
  * @return return none
  */
 public class Mkdir extends Command {
-  
+
   public Mkdir(FileSystem fs) {
     super(fs);
   }
+
   /**
-   * Run method that return none but create a new directory to 
-   * the path by the input string.
+   * Run method that return none but create a new directory to the path by the
+   * input string.
    * 
    * @param fs is a filesystem that has been constructed
    * @return return none
@@ -30,48 +32,48 @@ public class Mkdir extends Command {
           FileDirectory secondLastDir = fs.trace(partialPath);
           if (secondLastDir != null) {
             // check if the partial path is a directory
-            if(secondLastDir instanceof Directory) {
-              if(((Directory) secondLastDir).subExist(newDirectoryName)) {
-                output = "Argument"+ i + ": File or directory with the same"
+            if (secondLastDir instanceof Directory) {
+              if (((Directory) secondLastDir).subExist(newDirectoryName)) {
+                output = "Argument" + i + ": File or directory with the same"
                     + " name already exists";
-              } else if(!validName(newDirectoryName)) {
-                output = "Argument"+ i + ": Invalid name with"
+              } else if (!validName(newDirectoryName)) {
+                output = "Argument" + i + ": Invalid name with"
                     + " special character";
               } else {
-                Directory newDirectory = new Directory(newDirectoryName,
-                    (Directory)secondLastDir);
-                ((Directory)secondLastDir).setSub(newDirectory);
+                Directory newDirectory =
+                    new Directory(newDirectoryName, (Directory) secondLastDir);
+                ((Directory) secondLastDir).setSub(newDirectory);
               }
-            // else it is a file
+              // else it is a file
             } else {
-              output = "Argument"+ i + ": Cannot make new directoy in a File";
+              output = "Argument" + i + ": Cannot make new directoy in a File";
             }
-          }else {
-            output = "Argument"+ i + ": No such directory to add new directory";
+          } else {
+            output =
+                "Argument" + i + ": No such directory to add new directory";
           }
         } else {
           //
           if (currDir.subExist(input[i])) {
-            output = "Argument"+ i + ": Some Files or Directories"
+            output = "Argument" + i + ": Some Files or Directories"
                 + " already exist";
-          } else if(!validName(input[i])) {
-            output = "Argument"+ i + ": Invalid name with special character";
+          } else if (!validName(input[i])) {
+            output = "Argument" + i + ": Invalid name with special character";
           } else {
-            Directory newDirectory = new Directory(input[i],
-                currDir);
+            Directory newDirectory = new Directory(input[i], currDir);
             currDir.setSub(newDirectory);
           }
         }
-      if(output != "") {
-        System.out.println(output);
-      }
+        if (output != "") {
+          System.out.println(output);
+        }
       }
     } else {
       System.out.println(super.errorMessage());
       System.out.println(errorMessage());
     }
   }
-  
+
   public boolean isValid(String[] input) {
     boolean result = false;
     if (input.length != 1) {
