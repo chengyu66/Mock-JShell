@@ -1,0 +1,11 @@
+Class name: File
+Parent class (if any):FileDirectory
+Subclasses (if any):
+
+Responsibilities:
+* Stores Content 
+
+Collaborators:
+* FileSystem
+* Directory
+* Echo
