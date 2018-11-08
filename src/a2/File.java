@@ -12,7 +12,8 @@ public class File extends FileDirectory{
 	   * the constructor of file
 	   * initialize content
 	   * 
-	   * @param None
+	   * @param name the name of FIle
+	   * @param parent the parent Directory of this file
 	   * @return the String path of this FileDirectory.
 	   */
 	public File(String name, Directory parent){
