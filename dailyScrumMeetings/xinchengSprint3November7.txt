@@ -1,0 +1,4 @@
+What did I work on in the last three days?
+    - fix the misunderstanding concept of path relative to current directory
+    - rewrite all methods involve this problem
+    - debugging
