@@ -12,10 +12,23 @@ package a2;
  */
 public class Ls extends Command{
   
+	/**
+	 * the constructor of Ls
+	 * 
+	 * @param fs the FileSystem in JShell
+	 * @return return none
+	 */
   public Ls(FileSystem fs) {
     super(fs);
   }
   
+  /**
+   * Run the command and list all the directory
+   * and file by the giving path
+   * 
+   * @param input a String array of user input without space
+   * @return return None
+   */
   public void run(String[] input) {
     String output = "";
     if (input.length == 1) {
@@ -42,7 +55,7 @@ public class Ls extends Command{
       System.out.println(errorMessage());
     }
   }
-  
+
   public String errorMessage() {
     return "correct format of Command ls: ls [PATH]";
   }
