@@ -1,0 +1,4 @@
+What did I work on in the last three days?
+    - Finish the some sub class of Command(history, echo)
+    - write some test case in Test
+    - debugging
