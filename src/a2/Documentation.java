@@ -3,7 +3,16 @@ package a2;
 import java.util.HashMap;
 import java.util.Map;
 
-
+/**
+ * Determines how similar each pair of users is based on their ratings. This
+ * similarity value is represented with with a float value between 0 and 1,
+ * where 1 is perfect/identical similarity. Stores these values in the
+ * userUserMatrix.
+ * 
+ * @param items1 is the column of the first user.
+ * @param items2 is the column of the second user.
+ * @return return a double represents the distance between users.
+ */
 public class Documentation{
   private Map<String, String> map;
   public Documentation(){
@@ -25,7 +34,7 @@ public class Documentation{
     map.put("history", "This command will print out recent commands, one command per line. i.e.\n" + 
     		"1. cd ..\n" + 
     		"2. mkdir textFolder\n" + 
-    		"3. echo ¡°Hello World¡±\n" + 
+    		"3. echo ï¿½ï¿½Hello Worldï¿½ï¿½\n" + 
     		"4. fsjhdfks\n" + 
     		"5. history\n" + 
     		"The above output from history has two columns. The first column is\n" + 
@@ -58,7 +67,7 @@ public class Documentation{
     		"command removes the top most directory from the directory stack and\n" + 
     		"makes it the current working directory. If there is no directory onto the\n" + 
     		"stack, then give appropriate error message.");
-    map.put("cat", "Input format: cat File1 [File2 ...] \n Display the contents of FILE1 and other files (i.e. File2 ¡­.) concatenated\n" + 
+    map.put("cat", "Input format: cat File1 [File2 ...] \n Display the contents of FILE1 and other files (i.e. File2 ï¿½ï¿½.) concatenated\n" + 
     		"in the shell. You may want to use three line breaks to separate the contents of\n" + 
     		"one file from the other file.");
     map.put("man", "Input format: man CMD \n Print documentation for CMD");
