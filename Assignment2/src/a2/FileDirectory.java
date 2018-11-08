@@ -1,37 +1,63 @@
 package a2;
 /**
- * Determines how similar each pair of users is based on their ratings. This
- * similarity value is represented with with a float value between 0 and 1,
- * where 1 is perfect/identical similarity. Stores these values in the
- * userUserMatrix.
- * 
- * @param items1 is the column of the first user.
- * @param items2 is the column of the second user.
- * @return return a double represents the distance between users.
+ * The class is the parent class of File
+ * and Directory. It has the methods for both 
+ * two classes.
  */
 public class FileDirectory {
 	private String name;
 	private FileDirectory parent;
 	
-
+	/**
+	   * the constructor of FileDirectory
+	   * initialize the name, parent.
+	   * 
+	   * @param input a String array of user input without space
+	   * @return return None
+	   */
 	public FileDirectory(String name, FileDirectory parent){
 		this.name = name;
 		this.parent = parent;
 		
 	}
 	
+	/**
+	   * Get the name of the File or Directory.
+	   * 
+	   * @param None
+	   * @return return the name of the File or Directory
+	   */
 	public String getName(){
 		return this.name;
 	}
 	
+	
+	/**
+	   * set parent of Directory or File.
+	   * 
+	   * @param the name of parent Directory
+	   * @return None
+	   */
 	public void setParent(Directory parent){
 		this.parent = parent;
 	}
 	
+	/**
+	   * get the parent of Directory or File.
+	   * 
+	   * @param None
+	   * @return The parent FileDirectory 
+	   */
 	public FileDirectory getParent(){
 		return this.parent;
 	}
 	
+	/**
+	   * output the path of this FileDirectory.
+	   * 
+	   * @param None
+	   * @return the String path of this FileDirectory.
+	   */
 	public String toString(){
 		String output = this.name;
 		FileDirectory currParent = this.parent;
