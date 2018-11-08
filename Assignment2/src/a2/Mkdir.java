@@ -1,20 +1,22 @@
 package a2;
 /**
- * Determines how similar each pair of users is based on their ratings. This
- * similarity value is represented with with a float value between 0 and 1,
- * where 1 is perfect/identical similarity. Stores these values in the
- * userUserMatrix.
+ * Make directory class is a command that constructed by FileSystem
  * 
- * @param items1 is the column of the first user.
- * @param items2 is the column of the second user.
- * @return return a double represents the distance between users.
+ * @param fs is a filesystem that has been constructed
+ * @return return none
  */
 public class Mkdir extends Command {
   
   public Mkdir(FileSystem fs) {
     super(fs);
   }
-  
+  /**
+   * Run method that return none but create a new directory to 
+   * the path by the input string.
+   * 
+   * @param fs is a filesystem that has been constructed
+   * @return return none
+   */
   public void run(String[] input) {
     if (isValid(input)) {
       Directory currDir = fs.getCurrentDirectory();
