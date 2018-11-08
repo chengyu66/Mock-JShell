@@ -12,7 +12,8 @@ public class FileDirectory {
 	   * the constructor of FileDirectory
 	   * initialize the name, parent.
 	   * 
-	   * @param input a String array of user input without space
+	   * @param name The name of FileSystem
+	   * @param the FileDirectory
 	   * @return return None
 	   */
 	public FileDirectory(String name, FileDirectory parent){
