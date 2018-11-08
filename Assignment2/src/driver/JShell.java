@@ -60,18 +60,6 @@ public class JShell {
     terminate = false;
     // create a FileSystem with SingletonDesignPattern
     fs = FileSystem.createInstanceOfFileSystem();
-    // for testing, delete this after!!!!!
-    Directory a = fs.getRoot();
-    a.setSub(new Directory("user",a));
-    Directory b = (Directory)a.getSub().get(0);
-    b.setSub(new Directory("Application",b));
-    b.setSub(new Directory("Desktop",b));
-    File juben = new File("juben.txt", b);
-    b.setSub(juben);
-    Directory c = (Directory)b.getSub().get(0);
-    File music = new File("Music.txt", c);
-    c.setSub(music);
-    music.setContent("DreamTeam");
 
 
     // creating command objects
@@ -148,7 +136,7 @@ public class JShell {
 
   private boolean isCommandValid(String command) {
     boolean result = false;
-    if (map.keySet().contains(command)) {
+    if (map.keySet().contains(command) || command.equals("exit")) {
       result = true;
     }
     return result;
