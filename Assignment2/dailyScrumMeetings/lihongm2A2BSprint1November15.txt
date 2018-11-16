@@ -1,0 +1,11 @@
+What did I work on in the last three days?
+    - brainstormed and discussed the adding function of a2B with team
+    - Draw a sketch UML diagram with my teammates
+
+What do I plan to work in the next three days?
+    - start to work on the adding functions of the existing commands
+    - Start writing JUnit Test files.
+
+Am I blocked on anything?
+    - one of our team member may want to drop the course, we are trying to deal
+    with this situation.
