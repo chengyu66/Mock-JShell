@@ -1,0 +1,1179 @@
++++ASSIGNMENT2 TEAM MEMBER CONTRIBUTION+++
+
+
+
+PART 1) +++SVN CHECKOUT ON YOUR ASSIGNMENT1+++
+A    Assignment2/crcCards
+A    Assignment2/dailyScrumMeetings
+A    Assignment2/productBacklog
+A    Assignment2/sprints
+A    Assignment2/src
+A    Assignment2/src/a2
+A    Assignment2/dailyScrumMeetings/xinchengSprint1October20.txt
+A    Assignment2/dailyScrumMeetings/xinchengSprint2October30.txt
+A    Assignment2/productBacklog/productBacklogFor2A.txt
+A    Assignment2/sprints/Sprint2Backlog.txt
+A    Assignment2/dailyScrumMeetings/mihaoSprint2October26.txt
+A    Assignment2/dailyScrumMeetings/mihaoSprint3November7.txt
+A    Assignment2/dailyScrumMeetings/wangy809Sprint1October20.txt
+A    Assignment2/dailyScrumMeetings/wangy809Sprint2October26.txt
+A    Assignment2/dailyScrumMeetings/wangy809Sprint3October30.txt
+A    Assignment2/crcCards/Cat.txt
+A    Assignment2/crcCards/ChangeDirectory
+A    Assignment2/crcCards/Command.txt
+A    Assignment2/crcCards/Directory.txt
+A    Assignment2/crcCards/DirectoryStack.txt
+A    Assignment2/crcCards/Documentation.txt
+A    Assignment2/src/a2/ChangeDirectory.java
+A    Assignment2/src/a2/Documentation.java
+A    Assignment2/src/a2/FileSystem.java
+A    Assignment2/src/a2/Command.java
+A    Assignment2/src/a2/Echo.java
+A    Assignment2/src/a2/History.java
+A    Assignment2/src/driver
+A    Assignment2/src/test
+A    Assignment2/dailyScrumMeetings/xinchengSprint2October26.txt
+A    Assignment2/dailyScrumMeetings/xinchengSprint3November7.txt
+A    Assignment2/sprints/Sprint1Backlog.txt
+A    Assignment2/src/a2/Cat.java
+A    Assignment2/src/a2/DirectoryStack.java
+A    Assignment2/src/a2/FileDirectory.java
+A    Assignment2/src/a2/Man.java
+A    Assignment2/crcCards/Echo.txt
+A    Assignment2/crcCards/File.txt
+A    Assignment2/crcCards/FileDirectory.txt
+A    Assignment2/crcCards/FileSystem.txt
+A    Assignment2/crcCards/History.txt
+A    Assignment2/crcCards/JShell.txt
+A    Assignment2/src/a2/Popd.java
+A    Assignment2/src/test/Test.java
+A    Assignment2/src/a2/Pwd.java
+A    Assignment2/DemoFeedback
+A    Assignment2/src/a2/Mkdir.java
+A    Assignment2/src/driver/JShell.java
+A    Assignment2/readMeAssignment2A.txt
+A    Assignment2/crcCards/Ls.txt
+A    Assignment2/crcCards/Man.txt
+A    Assignment2/crcCards/Mkdir.txt
+A    Assignment2/crcCards/Popd.txt
+A    Assignment2/crcCards/Pushd.txt
+A    Assignment2/crcCards/Pwd.txt
+A    Assignment2/crcCards/readMeForCrcCards.txt
+A    Assignment2/dailyScrumMeetings/lihongm2Sprint1October20.txt
+A    Assignment2/dailyScrumMeetings/lihongm2Sprint2October23.txt
+A    Assignment2/dailyScrumMeetings/lihongm2Sprint2October26.txt
+A    Assignment2/dailyScrumMeetings/lihongm2Sprint3October30.txt
+A    Assignment2/dailyScrumMeetings/mihaoSprint1October20.txt
+A    Assignment2/dailyScrumMeetings/mihaoSprint2October23.txt
+A    Assignment2/dailyScrumMeetings/mihaoSprint2October30.txt
+A    Assignment2/dailyScrumMeetings/readMeDailyScrumMeetings.txt
+A    Assignment2/dailyScrumMeetings/wangy809Sprint2October23.txt
+A    Assignment2/dailyScrumMeetings/wangy809Sprint3November7.txt
+A    Assignment2/dailyScrumMeetings/xinchengSprint2October23.txt
+A    Assignment2/dailyScrumMeetings/xinchengSprint3November4.txt
+A    Assignment2/productBacklog/readMeProductBacklog.txt
+A    Assignment2/sprints/readMeSprints.txt
+A    Assignment2/src/a2/Directory.java
+A    Assignment2/src/a2/File.java
+A    Assignment2/src/a2/Ls.java
+A    Assignment2/src/a2/Pushd.java
+A    Assignment2/.project
+Checked out revision 255.
+
+
+
+PART 2) +++SVN COMMIT LOGS ARE+++
+Marks Deductions here (-.5 max): 
+------------------------------------------------------------------------
+r255 | mihao@UTORONTO.CA | 2018-11-07 23:08:07 -0500 (Wed, 07 Nov 2018) | 1 line
+
+add some detail
+------------------------------------------------------------------------
+r254 | wangy809@UTORONTO.CA | 2018-11-07 23:07:07 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update my last daily scrum
+------------------------------------------------------------------------
+r253 | mihao@UTORONTO.CA | 2018-11-07 23:05:59 -0500 (Wed, 07 Nov 2018) | 1 line
+
+the scurm 
+------------------------------------------------------------------------
+r252 | mihao@UTORONTO.CA | 2018-11-07 22:55:38 -0500 (Wed, 07 Nov 2018) | 1 line
+
+add some detail
+------------------------------------------------------------------------
+r251 | mihao@UTORONTO.CA | 2018-11-07 22:54:40 -0500 (Wed, 07 Nov 2018) | 2 lines
+
+add some case
+
+------------------------------------------------------------------------
+r250 | xincheng@UTORONTO.CA | 2018-11-07 22:50:02 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update format of JShell Class
+------------------------------------------------------------------------
+r249 | xincheng@UTORONTO.CA | 2018-11-07 22:48:50 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update format of Mkdir, Pwd Class
+------------------------------------------------------------------------
+r248 | xincheng@UTORONTO.CA | 2018-11-07 22:48:03 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update format of Directory Class
+------------------------------------------------------------------------
+r247 | mihao@UTORONTO.CA | 2018-11-07 22:44:51 -0500 (Wed, 07 Nov 2018) | 1 line
+
+add some method
+------------------------------------------------------------------------
+r246 | wangy809@UTORONTO.CA | 2018-11-07 22:41:33 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update JShell docstring
+------------------------------------------------------------------------
+r245 | mihao@UTORONTO.CA | 2018-11-07 22:30:57 -0500 (Wed, 07 Nov 2018) | 1 line
+
+The test class for testing
+------------------------------------------------------------------------
+r244 | wangy809@UTORONTO.CA | 2018-11-07 22:26:11 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update Ls's docstring
+------------------------------------------------------------------------
+r243 | wangy809@UTORONTO.CA | 2018-11-07 22:24:37 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update pwd's docstring
+------------------------------------------------------------------------
+r242 | mihao@UTORONTO.CA | 2018-11-07 22:17:25 -0500 (Wed, 07 Nov 2018) | 1 line
+
+add the docstring
+------------------------------------------------------------------------
+r241 | wangy809@UTORONTO.CA | 2018-11-07 22:14:02 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update mkdir's docstring
+------------------------------------------------------------------------
+r240 | xincheng@UTORONTO.CA | 2018-11-07 22:11:20 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update format of Man Class
+------------------------------------------------------------------------
+r239 | xincheng@UTORONTO.CA | 2018-11-07 22:10:35 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update format of File Class
+------------------------------------------------------------------------
+r238 | xincheng@UTORONTO.CA | 2018-11-07 22:08:12 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update format of Pushd Class
+------------------------------------------------------------------------
+r237 | xincheng@UTORONTO.CA | 2018-11-07 22:07:22 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update format of Echo Class
+------------------------------------------------------------------------
+r236 | mihao@UTORONTO.CA | 2018-11-07 22:06:36 -0500 (Wed, 07 Nov 2018) | 1 line
+
+add the docstring
+------------------------------------------------------------------------
+r235 | wangy809@UTORONTO.CA | 2018-11-07 22:05:22 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update man's docstring
+------------------------------------------------------------------------
+r234 | xincheng@UTORONTO.CA | 2018-11-07 22:05:09 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Delete Test Class
+------------------------------------------------------------------------
+r233 | xincheng@UTORONTO.CA | 2018-11-07 22:00:54 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update format of Popd Class
+------------------------------------------------------------------------
+r232 | xincheng@UTORONTO.CA | 2018-11-07 21:59:41 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update format of Documentation Class
+------------------------------------------------------------------------
+r231 | xincheng@UTORONTO.CA | 2018-11-07 21:59:03 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update format of FileDirectory Class
+------------------------------------------------------------------------
+r230 | wangy809@UTORONTO.CA | 2018-11-07 21:58:59 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update documentation's docstring
+------------------------------------------------------------------------
+r229 | mihao@UTORONTO.CA | 2018-11-07 21:58:43 -0500 (Wed, 07 Nov 2018) | 1 line
+
+add something
+------------------------------------------------------------------------
+r228 | mihao@UTORONTO.CA | 2018-11-07 21:57:43 -0500 (Wed, 07 Nov 2018) | 1 line
+
+add something
+------------------------------------------------------------------------
+r227 | mihao@UTORONTO.CA | 2018-11-07 21:56:10 -0500 (Wed, 07 Nov 2018) | 2 lines
+
+add the docstring
+
+------------------------------------------------------------------------
+r226 | xincheng@UTORONTO.CA | 2018-11-07 21:55:07 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Add DailyScrumMeetings for Nov 7th
+------------------------------------------------------------------------
+r225 | wangy809@UTORONTO.CA | 2018-11-07 21:54:02 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update documentation's docstring
+------------------------------------------------------------------------
+r224 | mihao@UTORONTO.CA | 2018-11-07 21:53:35 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Add the docstring
+------------------------------------------------------------------------
+r223 | lihongm2@UTORONTO.CA | 2018-11-07 21:50:33 -0500 (Wed, 07 Nov 2018) | 2 lines
+
+JavaDoc
+
+------------------------------------------------------------------------
+r222 | xincheng@UTORONTO.CA | 2018-11-07 21:50:04 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update format of DirectoryStack Class
+------------------------------------------------------------------------
+r221 | lihongm2@UTORONTO.CA | 2018-11-07 21:49:26 -0500 (Wed, 07 Nov 2018) | 1 line
+
+javadoc
+------------------------------------------------------------------------
+r220 | xincheng@UTORONTO.CA | 2018-11-07 21:48:02 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update format of FileSystem Class
+------------------------------------------------------------------------
+r219 | mihao@UTORONTO.CA | 2018-11-07 21:47:15 -0500 (Wed, 07 Nov 2018) | 2 lines
+
+add the docstring
+
+------------------------------------------------------------------------
+r218 | xincheng@UTORONTO.CA | 2018-11-07 21:47:15 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update format of History
+------------------------------------------------------------------------
+r217 | xincheng@UTORONTO.CA | 2018-11-07 21:45:26 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update format of Cat, ChangeDirectory, Command, Ls Class
+------------------------------------------------------------------------
+r216 | lihongm2@UTORONTO.CA | 2018-11-07 21:41:01 -0500 (Wed, 07 Nov 2018) | 1 line
+
+CRCcards
+------------------------------------------------------------------------
+r215 | wangy809@UTORONTO.CA | 2018-11-07 21:40:54 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update command documentation
+------------------------------------------------------------------------
+r214 | lihongm2@UTORONTO.CA | 2018-11-07 21:40:47 -0500 (Wed, 07 Nov 2018) | 1 line
+
+CRCcards
+------------------------------------------------------------------------
+r213 | lihongm2@UTORONTO.CA | 2018-11-07 21:40:36 -0500 (Wed, 07 Nov 2018) | 1 line
+
+CRCcards
+------------------------------------------------------------------------
+r212 | lihongm2@UTORONTO.CA | 2018-11-07 21:40:19 -0500 (Wed, 07 Nov 2018) | 1 line
+
+CRCcards
+------------------------------------------------------------------------
+r211 | xincheng@UTORONTO.CA | 2018-11-07 21:40:15 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update JShell format
+------------------------------------------------------------------------
+r210 | mihao@UTORONTO.CA | 2018-11-07 21:40:14 -0500 (Wed, 07 Nov 2018) | 2 lines
+
+add the docstring
+
+------------------------------------------------------------------------
+r209 | lihongm2@UTORONTO.CA | 2018-11-07 21:40:03 -0500 (Wed, 07 Nov 2018) | 2 lines
+
+FileDirectory
+
+------------------------------------------------------------------------
+r208 | mihao@UTORONTO.CA | 2018-11-07 21:39:55 -0500 (Wed, 07 Nov 2018) | 1 line
+
+add the docstring
+------------------------------------------------------------------------
+r207 | wangy809@UTORONTO.CA | 2018-11-07 21:34:38 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update changeDirectory documentation
+------------------------------------------------------------------------
+r206 | lihongm2@UTORONTO.CA | 2018-11-07 21:28:32 -0500 (Wed, 07 Nov 2018) | 2 lines
+
+javadoc
+
+------------------------------------------------------------------------
+r205 | lihongm2@UTORONTO.CA | 2018-11-07 21:28:17 -0500 (Wed, 07 Nov 2018) | 1 line
+
+javadoc
+------------------------------------------------------------------------
+r204 | wangy809@UTORONTO.CA | 2018-11-07 21:24:42 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update cat documentation
+------------------------------------------------------------------------
+r203 | xincheng@UTORONTO.CA | 2018-11-07 21:17:44 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update JShell Class
+------------------------------------------------------------------------
+r202 | lihongm2@UTORONTO.CA | 2018-11-07 21:14:04 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Documentation
+------------------------------------------------------------------------
+r201 | wangy809@UTORONTO.CA | 2018-11-07 21:01:48 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update docstring
+------------------------------------------------------------------------
+r200 | wangy809@UTORONTO.CA | 2018-11-07 20:55:13 -0500 (Wed, 07 Nov 2018) | 1 line
+
+add docstring of Jshell
+------------------------------------------------------------------------
+r199 | xincheng@UTORONTO.CA | 2018-11-07 20:52:00 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update JShell Class
+------------------------------------------------------------------------
+r198 | mihao@UTORONTO.CA | 2018-11-07 20:49:11 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update the echo
+------------------------------------------------------------------------
+r197 | lihongm2@UTORONTO.CA | 2018-11-07 20:48:12 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Jshell
+------------------------------------------------------------------------
+r196 | lihongm2@UTORONTO.CA | 2018-11-07 20:46:52 -0500 (Wed, 07 Nov 2018) | 2 lines
+
+Documentation for all commands
+
+------------------------------------------------------------------------
+r195 | xincheng@UTORONTO.CA | 2018-11-07 20:43:55 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update a new version of Mkdir Class
+------------------------------------------------------------------------
+r194 | mihao@UTORONTO.CA | 2018-11-07 20:39:55 -0500 (Wed, 07 Nov 2018) | 1 line
+
+finish the echo
+------------------------------------------------------------------------
+r193 | wangy809@UTORONTO.CA | 2018-11-07 20:07:17 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update CRCcards
+------------------------------------------------------------------------
+r192 | wangy809@UTORONTO.CA | 2018-11-07 19:47:22 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update Jshell with man
+------------------------------------------------------------------------
+r191 | xincheng@UTORONTO.CA | 2018-11-07 19:26:40 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update JShell Class
+------------------------------------------------------------------------
+r190 | wangy809@UTORONTO.CA | 2018-11-07 19:22:59 -0500 (Wed, 07 Nov 2018) | 1 line
+
+create man class and documentation class
+------------------------------------------------------------------------
+r189 | xincheng@UTORONTO.CA | 2018-11-07 19:17:31 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update Command Class
+------------------------------------------------------------------------
+r188 | wangy809@UTORONTO.CA | 2018-11-07 17:37:47 -0500 (Wed, 07 Nov 2018) | 1 line
+
+delete duplicated class
+------------------------------------------------------------------------
+r187 | wangy809@UTORONTO.CA | 2018-11-07 17:32:36 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update Cat class with line breaks
+------------------------------------------------------------------------
+r186 | mihao@UTORONTO.CA | 2018-11-07 17:32:20 -0500 (Wed, 07 Nov 2018) | 1 line
+
+rewrite the echo
+------------------------------------------------------------------------
+r185 | xincheng@UTORONTO.CA | 2018-11-07 17:27:56 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update FileSystem Class
+------------------------------------------------------------------------
+r184 | xincheng@UTORONTO.CA | 2018-11-07 17:27:42 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update ChangeDirectory Class
+------------------------------------------------------------------------
+r183 | lihongm2@UTORONTO.CA | 2018-11-07 17:23:29 -0500 (Wed, 07 Nov 2018) | 1 line
+
+pushd deleted
+------------------------------------------------------------------------
+r182 | lihongm2@UTORONTO.CA | 2018-11-07 17:23:14 -0500 (Wed, 07 Nov 2018) | 1 line
+
+popd deleted
+------------------------------------------------------------------------
+r181 | lihongm2@UTORONTO.CA | 2018-11-07 17:21:33 -0500 (Wed, 07 Nov 2018) | 1 line
+
+pushd updated
+------------------------------------------------------------------------
+r180 | lihongm2@UTORONTO.CA | 2018-11-07 17:19:50 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Popd updated
+------------------------------------------------------------------------
+r179 | lihongm2@UTORONTO.CA | 2018-11-07 17:19:28 -0500 (Wed, 07 Nov 2018) | 1 line
+
+conflict solved
+------------------------------------------------------------------------
+r178 | xincheng@UTORONTO.CA | 2018-11-07 17:10:47 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update Mkdir Class
+------------------------------------------------------------------------
+r177 | xincheng@UTORONTO.CA | 2018-11-07 17:10:21 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update FileSystem Class
+------------------------------------------------------------------------
+r176 | wangy809@UTORONTO.CA | 2018-11-07 16:50:30 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update tostring method of FileSystem
+------------------------------------------------------------------------
+r175 | xincheng@UTORONTO.CA | 2018-11-07 16:45:29 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Update FileDirectory toString method
+------------------------------------------------------------------------
+r174 | wangy809@UTORONTO.CA | 2018-11-07 16:35:59 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Create Cat class and update Jshell to fit Cat
+------------------------------------------------------------------------
+r173 | xincheng@UTORONTO.CA | 2018-11-07 15:43:02 -0500 (Wed, 07 Nov 2018) | 1 line
+
+update Mkdir Class
+------------------------------------------------------------------------
+r172 | mihao@UTORONTO.CA | 2018-11-07 13:10:08 -0500 (Wed, 07 Nov 2018) | 1 line
+
+Add a method
+------------------------------------------------------------------------
+r171 | mihao@UTORONTO.CA | 2018-11-07 13:09:51 -0500 (Wed, 07 Nov 2018) | 1 line
+
+add some addition
+------------------------------------------------------------------------
+r170 | xincheng@UTORONTO.CA | 2018-11-04 18:19:06 -0500 (Sun, 04 Nov 2018) | 1 line
+
+add dailyScrumMeeting of Nov 4th
+------------------------------------------------------------------------
+r169 | xincheng@UTORONTO.CA | 2018-11-01 22:49:02 -0400 (Thu, 01 Nov 2018) | 1 line
+
+Update Mkdir Class
+------------------------------------------------------------------------
+r168 | xincheng@UTORONTO.CA | 2018-11-01 22:48:49 -0400 (Thu, 01 Nov 2018) | 1 line
+
+Update FileDirectory Class
+------------------------------------------------------------------------
+r167 | mihao@UTORONTO.CA | 2018-11-01 21:09:28 -0400 (Thu, 01 Nov 2018) | 1 line
+
+add a condition
+------------------------------------------------------------------------
+r166 | mihao@UTORONTO.CA | 2018-11-01 16:39:03 -0400 (Thu, 01 Nov 2018) | 1 line
+
+add some condition of echo
+------------------------------------------------------------------------
+r165 | mihao@UTORONTO.CA | 2018-11-01 16:36:58 -0400 (Thu, 01 Nov 2018) | 1 line
+
+add echo
+------------------------------------------------------------------------
+r164 | lihongm2@UTORONTO.CA | 2018-11-01 16:35:36 -0400 (Thu, 01 Nov 2018) | 1 line
+
+DirectoryStack update
+------------------------------------------------------------------------
+r163 | lihongm2@UTORONTO.CA | 2018-11-01 16:34:10 -0400 (Thu, 01 Nov 2018) | 2 lines
+
+Feedbacks from Demo
+
+------------------------------------------------------------------------
+r162 | xincheng@UTORONTO.CA | 2018-11-01 16:23:21 -0400 (Thu, 01 Nov 2018) | 1 line
+
+Update JShell Class
+------------------------------------------------------------------------
+r161 | xincheng@UTORONTO.CA | 2018-11-01 16:23:08 -0400 (Thu, 01 Nov 2018) | 1 line
+
+Update FileSystem Class
+------------------------------------------------------------------------
+r160 | xincheng@UTORONTO.CA | 2018-11-01 16:22:55 -0400 (Thu, 01 Nov 2018) | 1 line
+
+update Command Class
+------------------------------------------------------------------------
+r159 | mihao@UTORONTO.CA | 2018-11-01 15:24:05 -0400 (Thu, 01 Nov 2018) | 1 line
+
+Fix the error
+------------------------------------------------------------------------
+r158 | xincheng@UTORONTO.CA | 2018-10-31 23:56:48 -0400 (Wed, 31 Oct 2018) | 1 line
+
+finished Mkdir Class
+------------------------------------------------------------------------
+r157 | mihao@UTORONTO.CA | 2018-10-31 22:37:03 -0400 (Wed, 31 Oct 2018) | 1 line
+
+fix a error
+------------------------------------------------------------------------
+r156 | xincheng@UTORONTO.CA | 2018-10-31 22:27:36 -0400 (Wed, 31 Oct 2018) | 1 line
+
+Update Mkdir Class
+------------------------------------------------------------------------
+r155 | mihao@UTORONTO.CA | 2018-10-31 22:23:57 -0400 (Wed, 31 Oct 2018) | 1 line
+
+The echo class which is the subclass of command
+------------------------------------------------------------------------
+r154 | xincheng@UTORONTO.CA | 2018-10-31 18:11:53 -0400 (Wed, 31 Oct 2018) | 1 line
+
+Update Mkdir Class
+------------------------------------------------------------------------
+r153 | xincheng@UTORONTO.CA | 2018-10-31 18:06:56 -0400 (Wed, 31 Oct 2018) | 1 line
+
+Update Mkdir Class
+------------------------------------------------------------------------
+r152 | xincheng@UTORONTO.CA | 2018-10-31 17:55:20 -0400 (Wed, 31 Oct 2018) | 1 line
+
+update Mkdir Class
+------------------------------------------------------------------------
+r151 | lihongm2@UTORONTO.CA | 2018-10-31 17:27:12 -0400 (Wed, 31 Oct 2018) | 1 line
+
+Updated
+------------------------------------------------------------------------
+r150 | lihongm2@UTORONTO.CA | 2018-10-31 17:26:54 -0400 (Wed, 31 Oct 2018) | 1 line
+
+DirectoryStack is added
+------------------------------------------------------------------------
+r149 | lihongm2@UTORONTO.CA | 2018-10-31 16:51:18 -0400 (Wed, 31 Oct 2018) | 2 lines
+
+popd is done
+
+------------------------------------------------------------------------
+r148 | xincheng@UTORONTO.CA | 2018-10-31 16:41:50 -0400 (Wed, 31 Oct 2018) | 1 line
+
+update Directory Class
+------------------------------------------------------------------------
+r147 | lihongm2@UTORONTO.CA | 2018-10-31 16:27:34 -0400 (Wed, 31 Oct 2018) | 1 line
+
+pushd is done
+------------------------------------------------------------------------
+r146 | mihao@UTORONTO.CA | 2018-10-31 15:17:42 -0400 (Wed, 31 Oct 2018) | 1 line
+
+Find a better way to write History
+------------------------------------------------------------------------
+r145 | xincheng@UTORONTO.CA | 2018-10-30 23:44:44 -0400 (Tue, 30 Oct 2018) | 1 line
+
+Update ChangeDirectory to work with cd .. and cd . Command
+------------------------------------------------------------------------
+r144 | xincheng@UTORONTO.CA | 2018-10-30 23:26:03 -0400 (Tue, 30 Oct 2018) | 1 line
+
+update Sprint2Backlog
+------------------------------------------------------------------------
+r143 | lihongm2@UTORONTO.CA | 2018-10-30 23:15:48 -0400 (Tue, 30 Oct 2018) | 2 lines
+
+October 30th's Scrum meeting
+
+------------------------------------------------------------------------
+r142 | lihongm2@UTORONTO.CA | 2018-10-30 23:07:20 -0400 (Tue, 30 Oct 2018) | 2 lines
+
+Now DirectoryStack is a composition of FileSystem
+
+------------------------------------------------------------------------
+r141 | xincheng@UTORONTO.CA | 2018-10-30 23:06:31 -0400 (Tue, 30 Oct 2018) | 1 line
+
+add a line of comment in FileSystem Class
+------------------------------------------------------------------------
+r140 | lihongm2@UTORONTO.CA | 2018-10-30 23:05:56 -0400 (Tue, 30 Oct 2018) | 1 line
+
+class DirecotryStack is added
+------------------------------------------------------------------------
+r139 | xincheng@UTORONTO.CA | 2018-10-30 23:01:17 -0400 (Tue, 30 Oct 2018) | 1 line
+
+update JShell
+------------------------------------------------------------------------
+r138 | xincheng@UTORONTO.CA | 2018-10-30 23:01:03 -0400 (Tue, 30 Oct 2018) | 1 line
+
+update FileSystem's trace method to work with File
+------------------------------------------------------------------------
+r137 | xincheng@UTORONTO.CA | 2018-10-30 23:00:43 -0400 (Tue, 30 Oct 2018) | 1 line
+
+update ChangeDirectory to work with File
+------------------------------------------------------------------------
+r136 | wangy809@UTORONTO.CA | 2018-10-30 22:43:24 -0400 (Tue, 30 Oct 2018) | 1 line
+
+Update my Fourth Daily ScrumMeeting.
+------------------------------------------------------------------------
+r135 | mihao@UTORONTO.CA | 2018-10-30 22:36:43 -0400 (Tue, 30 Oct 2018) | 1 line
+
+The scrum in October 30
+------------------------------------------------------------------------
+r134 | mihao@UTORONTO.CA | 2018-10-30 22:24:20 -0400 (Tue, 30 Oct 2018) | 1 line
+
+The Test Class is not useful
+------------------------------------------------------------------------
+r133 | xincheng@UTORONTO.CA | 2018-10-30 22:12:55 -0400 (Tue, 30 Oct 2018) | 1 line
+
+add ScrumMeetings for October30
+------------------------------------------------------------------------
+r132 | xincheng@UTORONTO.CA | 2018-10-30 16:24:19 -0400 (Tue, 30 Oct 2018) | 1 line
+
+update Ls Class
+------------------------------------------------------------------------
+r131 | xincheng@UTORONTO.CA | 2018-10-30 16:23:24 -0400 (Tue, 30 Oct 2018) | 1 line
+
+update JShell
+------------------------------------------------------------------------
+r130 | xincheng@UTORONTO.CA | 2018-10-30 15:32:40 -0400 (Tue, 30 Oct 2018) | 1 line
+
+Deleted a line in File Class
+------------------------------------------------------------------------
+r129 | wangy809@UTORONTO.CA | 2018-10-30 15:11:41 -0400 (Tue, 30 Oct 2018) | 1 line
+
+revise setsub method in Dictionary class
+------------------------------------------------------------------------
+r128 | xincheng@UTORONTO.CA | 2018-10-30 12:58:03 -0400 (Tue, 30 Oct 2018) | 1 line
+
+change a line in JShell
+------------------------------------------------------------------------
+r127 | xincheng@UTORONTO.CA | 2018-10-30 12:55:44 -0400 (Tue, 30 Oct 2018) | 1 line
+
+deleted two lines in JShell
+------------------------------------------------------------------------
+r126 | xincheng@UTORONTO.CA | 2018-10-30 12:52:47 -0400 (Tue, 30 Oct 2018) | 1 line
+
+update FileSystem by singleton design pattern
+------------------------------------------------------------------------
+r125 | xincheng@UTORONTO.CA | 2018-10-30 12:52:11 -0400 (Tue, 30 Oct 2018) | 1 line
+
+update the comment in JShell
+------------------------------------------------------------------------
+r124 | xincheng@UTORONTO.CA | 2018-10-30 12:05:59 -0400 (Tue, 30 Oct 2018) | 1 line
+
+update Ls Class
+------------------------------------------------------------------------
+r123 | xincheng@UTORONTO.CA | 2018-10-30 10:28:51 -0400 (Tue, 30 Oct 2018) | 1 line
+
+updated a line in JShell
+------------------------------------------------------------------------
+r122 | xincheng@UTORONTO.CA | 2018-10-30 10:28:27 -0400 (Tue, 30 Oct 2018) | 1 line
+
+Unify the isCorrect method to isValid
+------------------------------------------------------------------------
+r121 | wangy809@UTORONTO.CA | 2018-10-30 01:26:49 -0400 (Tue, 30 Oct 2018) | 1 line
+
+Update Jshell to test cd class and add my name
+------------------------------------------------------------------------
+r120 | wangy809@UTORONTO.CA | 2018-10-30 01:12:01 -0400 (Tue, 30 Oct 2018) | 1 line
+
+Fix toSting method
+------------------------------------------------------------------------
+r119 | wangy809@UTORONTO.CA | 2018-10-30 01:09:45 -0400 (Tue, 30 Oct 2018) | 1 line
+
+update FileSystem class with help method(Trace),to fit two cases(from root/from sub of current)
+------------------------------------------------------------------------
+r118 | wangy809@UTORONTO.CA | 2018-10-30 00:20:31 -0400 (Tue, 30 Oct 2018) | 1 line
+
+update ChangeDirectory class with error message
+------------------------------------------------------------------------
+r117 | wangy809@UTORONTO.CA | 2018-10-30 00:19:31 -0400 (Tue, 30 Oct 2018) | 1 line
+
+update printDirectory class with error message
+------------------------------------------------------------------------
+r116 | wangy809@UTORONTO.CA | 2018-10-29 18:53:42 -0400 (Mon, 29 Oct 2018) | 1 line
+
+fix PrintDirectory class
+------------------------------------------------------------------------
+r115 | wangy809@UTORONTO.CA | 2018-10-29 18:19:51 -0400 (Mon, 29 Oct 2018) | 1 line
+
+fix ChangeDirectory(cd) class
+------------------------------------------------------------------------
+r114 | xincheng@UTORONTO.CA | 2018-10-29 16:52:47 -0400 (Mon, 29 Oct 2018) | 1 line
+
+update Ls Class to have errorMessage
+------------------------------------------------------------------------
+r113 | xincheng@UTORONTO.CA | 2018-10-29 16:51:21 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Changed a line in Mkdir
+------------------------------------------------------------------------
+r112 | xincheng@UTORONTO.CA | 2018-10-29 16:50:26 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Added another case for History
+------------------------------------------------------------------------
+r111 | xincheng@UTORONTO.CA | 2018-10-29 16:44:50 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Update History Class to have errorMessage
+------------------------------------------------------------------------
+r110 | xincheng@UTORONTO.CA | 2018-10-29 16:33:17 -0400 (Mon, 29 Oct 2018) | 1 line
+
+added errorMessage method
+------------------------------------------------------------------------
+r109 | xincheng@UTORONTO.CA | 2018-10-29 16:33:05 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Update Mkdir Class to have errormessage
+------------------------------------------------------------------------
+r108 | xincheng@UTORONTO.CA | 2018-10-29 16:32:44 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Update JShell Class
+------------------------------------------------------------------------
+r107 | mihao@UTORONTO.CA | 2018-10-29 16:12:44 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Add some code in class
+------------------------------------------------------------------------
+r106 | mihao@UTORONTO.CA | 2018-10-29 16:12:15 -0400 (Mon, 29 Oct 2018) | 1 line
+
+add history class in Jshell
+------------------------------------------------------------------------
+r105 | xincheng@UTORONTO.CA | 2018-10-29 15:40:29 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Update JShell Class
+------------------------------------------------------------------------
+r104 | xincheng@UTORONTO.CA | 2018-10-29 15:40:09 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Create Mkdir Class
+------------------------------------------------------------------------
+r103 | xincheng@UTORONTO.CA | 2018-10-29 15:39:48 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Update Ls Class
+------------------------------------------------------------------------
+r102 | xincheng@UTORONTO.CA | 2018-10-29 15:16:02 -0400 (Mon, 29 Oct 2018) | 1 line
+
+update JShell Class
+------------------------------------------------------------------------
+r101 | xincheng@UTORONTO.CA | 2018-10-29 15:14:44 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Fixed a sign in FileDirectory Class
+------------------------------------------------------------------------
+r100 | xincheng@UTORONTO.CA | 2018-10-29 15:14:15 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Update Command Class
+------------------------------------------------------------------------
+r99 | lihongm2@UTORONTO.CA | 2018-10-29 14:58:51 -0400 (Mon, 29 Oct 2018) | 2 lines
+
+if path doesn't exist in trace, return null
+
+------------------------------------------------------------------------
+r98 | mihao@UTORONTO.CA | 2018-10-29 14:31:45 -0400 (Mon, 29 Oct 2018) | 1 line
+
+rename the method of trace
+------------------------------------------------------------------------
+r97 | xincheng@UTORONTO.CA | 2018-10-29 14:17:49 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Update JShell Class
+------------------------------------------------------------------------
+r96 | mihao@UTORONTO.CA | 2018-10-29 14:04:18 -0400 (Mon, 29 Oct 2018) | 1 line
+
+cancel the import
+------------------------------------------------------------------------
+r95 | mihao@UTORONTO.CA | 2018-10-29 14:02:51 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Fix the error
+------------------------------------------------------------------------
+r94 | xincheng@UTORONTO.CA | 2018-10-29 13:50:16 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Create the Pwd Class
+------------------------------------------------------------------------
+r93 | lihongm2@UTORONTO.CA | 2018-10-29 13:40:39 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Ls class
+------------------------------------------------------------------------
+r92 | lihongm2@UTORONTO.CA | 2018-10-29 13:40:11 -0400 (Mon, 29 Oct 2018) | 2 lines
+
+Added in a new method <Trace> to FileSystem
+
+------------------------------------------------------------------------
+r91 | mihao@UTORONTO.CA | 2018-10-29 13:38:00 -0400 (Mon, 29 Oct 2018) | 1 line
+
+fix a error
+------------------------------------------------------------------------
+r90 | xincheng@UTORONTO.CA | 2018-10-29 13:33:46 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Update JShell Class
+------------------------------------------------------------------------
+r89 | xincheng@UTORONTO.CA | 2018-10-29 13:33:31 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Change a line in Command
+------------------------------------------------------------------------
+r88 | xincheng@UTORONTO.CA | 2018-10-29 13:27:42 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Delete Exit in crcCards
+------------------------------------------------------------------------
+r87 | xincheng@UTORONTO.CA | 2018-10-29 13:27:14 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Delete Exit Class
+------------------------------------------------------------------------
+r86 | mihao@UTORONTO.CA | 2018-10-29 13:23:42 -0400 (Mon, 29 Oct 2018) | 1 line
+
+fix the error
+------------------------------------------------------------------------
+r85 | lihongm2@UTORONTO.CA | 2018-10-29 13:08:37 -0400 (Mon, 29 Oct 2018) | 2 lines
+
+Added in a new method <Trace> to FileSystem
+
+------------------------------------------------------------------------
+r84 | xincheng@UTORONTO.CA | 2018-10-29 12:18:51 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Create a Test Class
+------------------------------------------------------------------------
+r83 | mihao@UTORONTO.CA | 2018-10-29 11:59:53 -0400 (Mon, 29 Oct 2018) | 1 line
+
+add a method for directory
+------------------------------------------------------------------------
+r82 | lihongm2@UTORONTO.CA | 2018-10-29 11:58:43 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Test File added
+------------------------------------------------------------------------
+r81 | wangy809@UTORONTO.CA | 2018-10-29 02:19:06 -0400 (Mon, 29 Oct 2018) | 1 line
+
+build PrintDirectory class with its code
+------------------------------------------------------------------------
+r80 | wangy809@UTORONTO.CA | 2018-10-29 01:59:09 -0400 (Mon, 29 Oct 2018) | 1 line
+
+write the code of ChangeDirectory class
+------------------------------------------------------------------------
+r79 | xincheng@UTORONTO.CA | 2018-10-29 00:45:41 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Refactor format of Command Class
+------------------------------------------------------------------------
+r78 | xincheng@UTORONTO.CA | 2018-10-29 00:45:12 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Update JShell Class
+------------------------------------------------------------------------
+r77 | xincheng@UTORONTO.CA | 2018-10-29 00:37:56 -0400 (Mon, 29 Oct 2018) | 1 line
+
+Deleted a line in JShell Class
+------------------------------------------------------------------------
+r76 | xincheng@UTORONTO.CA | 2018-10-29 00:36:37 -0400 (Mon, 29 Oct 2018) | 1 line
+
+A better Version of Command Class
+------------------------------------------------------------------------
+r75 | xincheng@UTORONTO.CA | 2018-10-29 00:36:17 -0400 (Mon, 29 Oct 2018) | 1 line
+
+A better version of JShell Class
+------------------------------------------------------------------------
+r74 | wangy809@UTORONTO.CA | 2018-10-28 18:18:08 -0400 (Sun, 28 Oct 2018) | 1 line
+
+fixing command class
+------------------------------------------------------------------------
+r73 | wangy809@UTORONTO.CA | 2018-10-28 18:03:08 -0400 (Sun, 28 Oct 2018) | 1 line
+
+revise the code ofChangeDirectory class to fit command class
+------------------------------------------------------------------------
+r72 | wangy809@UTORONTO.CA | 2018-10-28 18:01:41 -0400 (Sun, 28 Oct 2018) | 1 line
+
+write the code of command class
+------------------------------------------------------------------------
+r71 | xincheng@UTORONTO.CA | 2018-10-28 15:58:42 -0400 (Sun, 28 Oct 2018) | 1 line
+
+Implement more things in JShell
+------------------------------------------------------------------------
+r70 | xincheng@UTORONTO.CA | 2018-10-28 15:58:17 -0400 (Sun, 28 Oct 2018) | 1 line
+
+change method run in Command Class
+------------------------------------------------------------------------
+r69 | xincheng@UTORONTO.CA | 2018-10-28 15:57:42 -0400 (Sun, 28 Oct 2018) | 1 line
+
+update Exit Class
+------------------------------------------------------------------------
+r68 | mihao@UTORONTO.CA | 2018-10-28 13:16:36 -0400 (Sun, 28 Oct 2018) | 1 line
+
+fix a incorrect name of method
+------------------------------------------------------------------------
+r67 | mihao@UTORONTO.CA | 2018-10-27 22:14:58 -0400 (Sat, 27 Oct 2018) | 1 line
+
+make Directory extends FileDirectory
+------------------------------------------------------------------------
+r66 | mihao@UTORONTO.CA | 2018-10-27 22:14:20 -0400 (Sat, 27 Oct 2018) | 1 line
+
+make the File extends FileDirectory
+------------------------------------------------------------------------
+r65 | mihao@UTORONTO.CA | 2018-10-27 22:13:37 -0400 (Sat, 27 Oct 2018) | 1 line
+
+The super class of File and Directory
+------------------------------------------------------------------------
+r64 | lihongm2@UTORONTO.CA | 2018-10-27 19:28:15 -0400 (Sat, 27 Oct 2018) | 1 line
+
+Added in FileSystem
+------------------------------------------------------------------------
+r63 | mihao@UTORONTO.CA | 2018-10-27 16:08:56 -0400 (Sat, 27 Oct 2018) | 1 line
+
+add the import and fix the error
+------------------------------------------------------------------------
+r62 | lihongm2@UTORONTO.CA | 2018-10-27 16:06:07 -0400 (Sat, 27 Oct 2018) | 1 line
+
+Class File is added in
+------------------------------------------------------------------------
+r61 | mihao@UTORONTO.CA | 2018-10-26 23:16:36 -0400 (Fri, 26 Oct 2018) | 1 line
+
+the sprint in October 26
+------------------------------------------------------------------------
+r60 | mihao@UTORONTO.CA | 2018-10-26 23:16:09 -0400 (Fri, 26 Oct 2018) | 1 line
+
+incorrect name of file
+------------------------------------------------------------------------
+r59 | xincheng@UTORONTO.CA | 2018-10-26 23:15:03 -0400 (Fri, 26 Oct 2018) | 1 line
+
+ScrumMeetings for Oct26
+------------------------------------------------------------------------
+r58 | wangy809@UTORONTO.CA | 2018-10-26 23:05:31 -0400 (Fri, 26 Oct 2018) | 1 line
+
+update my third daily ScrumMeeting.
+------------------------------------------------------------------------
+r57 | xincheng@UTORONTO.CA | 2018-10-26 23:02:13 -0400 (Fri, 26 Oct 2018) | 1 line
+
+Create Exit Class with basic code
+------------------------------------------------------------------------
+r56 | wangy809@UTORONTO.CA | 2018-10-26 22:59:31 -0400 (Fri, 26 Oct 2018) | 1 line
+
+build ChangeDirectory class with its base code
+------------------------------------------------------------------------
+r55 | mihao@UTORONTO.CA | 2018-10-26 22:55:55 -0400 (Fri, 26 Oct 2018) | 1 line
+
+The Sprint in October 26
+------------------------------------------------------------------------
+r54 | xincheng@UTORONTO.CA | 2018-10-26 22:52:17 -0400 (Fri, 26 Oct 2018) | 1 line
+
+update Command Class
+------------------------------------------------------------------------
+r53 | xincheng@UTORONTO.CA | 2018-10-26 22:46:40 -0400 (Fri, 26 Oct 2018) | 1 line
+
+update Command Class
+------------------------------------------------------------------------
+r52 | mihao@UTORONTO.CA | 2018-10-26 22:44:42 -0400 (Fri, 26 Oct 2018) | 1 line
+
+history class, a sop class of command 
+------------------------------------------------------------------------
+r51 | lihongm2@UTORONTO.CA | 2018-10-26 22:43:07 -0400 (Fri, 26 Oct 2018) | 1 line
+
+Scrum meeting Oct. 26
+------------------------------------------------------------------------
+r50 | lihongm2@UTORONTO.CA | 2018-10-26 22:35:47 -0400 (Fri, 26 Oct 2018) | 1 line
+
+I added in the base code for class Directory
+------------------------------------------------------------------------
+r49 | xincheng@UTORONTO.CA | 2018-10-26 22:11:45 -0400 (Fri, 26 Oct 2018) | 1 line
+
+created a Exit Class
+------------------------------------------------------------------------
+r48 | xincheng@UTORONTO.CA | 2018-10-26 21:46:19 -0400 (Fri, 26 Oct 2018) | 1 line
+
+create a package a2
+------------------------------------------------------------------------
+r47 | mihao@UTORONTO.CA | 2018-10-23 23:28:24 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Add some tasks
+------------------------------------------------------------------------
+r46 | wangy809@UTORONTO.CA | 2018-10-23 22:28:25 -0400 (Tue, 23 Oct 2018) | 1 line
+
+update Sprint2 Backlog with my team.
+------------------------------------------------------------------------
+r45 | wangy809@UTORONTO.CA | 2018-10-23 22:27:13 -0400 (Tue, 23 Oct 2018) | 1 line
+
+update Sprint2 Backlog with my team.
+------------------------------------------------------------------------
+r44 | mihao@UTORONTO.CA | 2018-10-23 21:57:01 -0400 (Tue, 23 Oct 2018) | 1 line
+
+The scrum for Oct 23
+------------------------------------------------------------------------
+r43 | wangy809@UTORONTO.CA | 2018-10-23 21:55:53 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Create my second daily ScrumMeeting.
+------------------------------------------------------------------------
+r42 | lihongm2@UTORONTO.CA | 2018-10-23 21:45:39 -0400 (Tue, 23 Oct 2018) | 1 line
+
+My Scrum meeting updates on October 23.
+------------------------------------------------------------------------
+r41 | wangy809@UTORONTO.CA | 2018-10-23 21:43:05 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Create my second daily ScrumMeeting.
+------------------------------------------------------------------------
+r40 | wangy809@UTORONTO.CA | 2018-10-23 21:39:11 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Add part of CRC Cards with my team.
+------------------------------------------------------------------------
+r39 | xincheng@UTORONTO.CA | 2018-10-23 21:38:15 -0400 (Tue, 23 Oct 2018) | 1 line
+
+add Sprint2 in ScrumMettings
+------------------------------------------------------------------------
+r38 | lihongm2@UTORONTO.CA | 2018-10-23 21:34:17 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Some CRCcards I've worked on after the discussion with my teammates.
+------------------------------------------------------------------------
+r37 | lihongm2@UTORONTO.CA | 2018-10-23 21:31:37 -0400 (Tue, 23 Oct 2018) | 2 lines
+
+deleted
+
+------------------------------------------------------------------------
+r36 | xincheng@UTORONTO.CA | 2018-10-23 21:29:59 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Add Pushd Class in CRCcards
+------------------------------------------------------------------------
+r35 | xincheng@UTORONTO.CA | 2018-10-23 21:29:46 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Add Popd Class in CRCcards
+------------------------------------------------------------------------
+r34 | xincheng@UTORONTO.CA | 2018-10-23 21:29:35 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Add History Class in CRCcards
+------------------------------------------------------------------------
+r33 | xincheng@UTORONTO.CA | 2018-10-23 21:29:25 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Add Error Class in CRCcards
+------------------------------------------------------------------------
+r32 | xincheng@UTORONTO.CA | 2018-10-23 21:29:15 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Add DirectoryStack Class in CRCcards
+------------------------------------------------------------------------
+r31 | xincheng@UTORONTO.CA | 2018-10-23 21:28:58 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Add Cat Class in CRCcards
+------------------------------------------------------------------------
+r30 | mihao@UTORONTO.CA | 2018-10-23 21:25:32 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Some crccards for class
+------------------------------------------------------------------------
+r29 | lihongm2@UTORONTO.CA | 2018-10-23 21:24:09 -0400 (Tue, 23 Oct 2018) | 1 line
+
+Some CRCcards I've worked on after the discussion with my teammates.
+------------------------------------------------------------------------
+r28 | lihongm2@UTORONTO.CA | 2018-10-20 16:40:20 -0400 (Sat, 20 Oct 2018) | 1 line
+
+My Scrum Meeting notes on Oct. 20th
+------------------------------------------------------------------------
+r27 | lihongm2@UTORONTO.CA | 2018-10-20 16:38:03 -0400 (Sat, 20 Oct 2018) | 1 line
+
+My Scrum Meeting notes on Oct. 20th
+------------------------------------------------------------------------
+r26 | mihao@UTORONTO.CA | 2018-10-20 16:35:33 -0400 (Sat, 20 Oct 2018) | 1 line
+
+my first sprint
+------------------------------------------------------------------------
+r25 | wangy809@UTORONTO.CA | 2018-10-20 16:22:20 -0400 (Sat, 20 Oct 2018) | 1 line
+
+Create my first daily ScrumMeeting.
+------------------------------------------------------------------------
+r24 | xincheng@UTORONTO.CA | 2018-10-20 14:37:32 -0400 (Sat, 20 Oct 2018) | 1 line
+
+update sprint1 of dailyScrumMettings
+------------------------------------------------------------------------
+r23 | xincheng@UTORONTO.CA | 2018-10-20 14:28:56 -0400 (Sat, 20 Oct 2018) | 1 line
+
+update Jshell honor code
+------------------------------------------------------------------------
+r22 | wangy809@UTORONTO.CA | 2018-10-17 23:36:40 -0400 (Wed, 17 Oct 2018) | 1 line
+
+change name
+------------------------------------------------------------------------
+r19 | wangy809@UTORONTO.CA | 2018-10-17 23:21:34 -0400 (Wed, 17 Oct 2018) | 1 line
+
+change name
+------------------------------------------------------------------------
+r18 | wangy809@UTORONTO.CA | 2018-10-17 23:20:05 -0400 (Wed, 17 Oct 2018) | 1 line
+
+change name
+------------------------------------------------------------------------
+r17 | wangy809@UTORONTO.CA | 2018-10-17 23:14:23 -0400 (Wed, 17 Oct 2018) | 1 line
+
+Update another 3 user stories to finish Product Backlog, after discussing with my team.
+------------------------------------------------------------------------
+r16 | wangy809@UTORONTO.CA | 2018-10-17 23:04:30 -0400 (Wed, 17 Oct 2018) | 1 line
+
+Allocate tasks and finish Sprint1Backlog after discussing with my team.
+------------------------------------------------------------------------
+r15 | xincheng@UTORONTO.CA | 2018-10-17 22:49:51 -0400 (Wed, 17 Oct 2018) | 1 line
+
+update 7-10 user stories in product backlog
+------------------------------------------------------------------------
+r14 | xincheng@UTORONTO.CA | 2018-10-17 22:31:15 -0400 (Wed, 17 Oct 2018) | 1 line
+
+update the tasks needed to be accomplished
+------------------------------------------------------------------------
+r13 | mihao@UTORONTO.CA | 2018-10-17 22:26:17 -0400 (Wed, 17 Oct 2018) | 1 line
+
+add the specific task
+------------------------------------------------------------------------
+r12 | mihao@UTORONTO.CA | 2018-10-17 22:23:04 -0400 (Wed, 17 Oct 2018) | 1 line
+
+add some details
+------------------------------------------------------------------------
+r11 | lihongm2@UTORONTO.CA | 2018-10-17 19:27:16 -0400 (Wed, 17 Oct 2018) | 1 line
+
+After the discussion with my teamates, I added in what are the targeted userstories we need to get done in the first sprint.
+------------------------------------------------------------------------
+r10 | lihongm2@UTORONTO.CA | 2018-10-17 19:25:59 -0400 (Wed, 17 Oct 2018) | 1 line
+
+After the discussion with my teamates, I created the file and added in 3 user stories
+------------------------------------------------------------------------
+r7 | attarwal@UTORONTO.CA | 2018-10-15 18:03:56 -0400 (Mon, 15 Oct 2018) | 1 line
+
+Starter code by instructor
+------------------------------------------------------------------------
+r6 | attarwal@UTORONTO.CA | 2018-10-15 18:03:55 -0400 (Mon, 15 Oct 2018) | 1 line
+
+Starter code by instructor
+------------------------------------------------------------------------
+r5 | attarwal@UTORONTO.CA | 2018-10-15 18:03:55 -0400 (Mon, 15 Oct 2018) | 1 line
+
+Starter code by instructor
+------------------------------------------------------------------------
+r4 | attarwal@UTORONTO.CA | 2018-10-15 18:03:54 -0400 (Mon, 15 Oct 2018) | 1 line
+
+Starter code by instructor
+------------------------------------------------------------------------
+r3 | attarwal@UTORONTO.CA | 2018-10-15 18:03:53 -0400 (Mon, 15 Oct 2018) | 1 line
+
+Starter code by instructor
+------------------------------------------------------------------------
+r2 | attarwal@UTORONTO.CA | 2018-10-15 18:03:52 -0400 (Mon, 15 Oct 2018) | 1 line
+
+Starter code by instructor
+------------------------------------------------------------------------
+r1 | Markus | 2018-10-14 15:25:10 -0400 (Sun, 14 Oct 2018) | 1 line
+
+
+------------------------------------------------------------------------
+
+
+
+Part 3) +++Work Distribution of Team Members+++
++++ON ALL SOURCE FILES+++
+  25 attarwal@U
+ 237 lihongm2@U
+ 423 mihao@UTOR
+ 305 wangy809@U
+ 433 xincheng@U
++++ON CRC CARDS+++
+   9 attarwal@U
+  54 lihongm2@U
+  29 mihao@UTOR
+  48 wangy809@U
+  41 xincheng@U
++++ON DAILYSCRUMMEETINGS+++
+  41 attarwal@U
+  48 lihongm2@U
+  46 mihao@UTOR
+  68 wangy809@U
+  54 xincheng@U
++++ON PRODUCT BACKLOG +++
+  11 attarwal@U
+  27 wangy809@U
++++ON SPRINTS+++
+  68 attarwal@U
+   8 mihao@UTOR
+  54 wangy809@U
+  25 xincheng@U
+29451
+Part 4) SVN Commits
+
+
+On Sprints
+   1  attarwal@UTORONTO.CA 
+   1  lihongm2@UTORONTO.CA 
+   2  mihao@UTORONTO.CA 
+   5  wangy809@UTORONTO.CA 
+   2  xincheng@UTORONTO.CA 
+
+
+On CRC Cards
+   1  attarwal@UTORONTO.CA 
+   8  lihongm2@UTORONTO.CA 
+   1  mihao@UTORONTO.CA 
+   2  wangy809@UTORONTO.CA 
+   7  xincheng@UTORONTO.CA 
+
+
+On DailyScrumMeetings
+   1  attarwal@UTORONTO.CA 
+   5  lihongm2@UTORONTO.CA 
+   7  mihao@UTORONTO.CA 
+   7  wangy809@UTORONTO.CA 
+   6  xincheng@UTORONTO.CA 
+
+
+On ProductBacklog
+   1  attarwal@UTORONTO.CA 
+   1  lihongm2@UTORONTO.CA 
+   1  mihao@UTORONTO.CA 
+   3  wangy809@UTORONTO.CA 
+   1  xincheng@UTORONTO.CA 
+
+
+On source
+   1  attarwal@UTORONTO.CA 
+  27  lihongm2@UTORONTO.CA 
+  41  mihao@UTORONTO.CA 
+  32  wangy809@UTORONTO.CA 
+  86  xincheng@UTORONTO.CA 
